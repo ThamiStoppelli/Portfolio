@@ -11,8 +11,8 @@ function Footer() {
             <p>Telefone: +55 85 91234-5678</p>
           </span>
           <div>
-            <a href="https://github.com/SeuGitHub" target="_blank" rel="noopener noreferrer"><i className="fab fa-github">GitHub</i></a>
-            <a href="https://linkedin.com/in/SeuLinkedIn" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin">LinkedIn</i></a>
+            <a href="https://github.com/ThamiStoppelli" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/thamires-stoppelli-6ab51a175/" target="_blank">LinkedIn</a>
           </div>
         </div>
       </div>
