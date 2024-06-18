@@ -1,6 +1,18 @@
-.aboutme .links {
+.aboutme-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 10rem;
+}
+.aboutme {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 2rem;
+}
+
+.aboutme-container img {
+    width: 16em;
 }

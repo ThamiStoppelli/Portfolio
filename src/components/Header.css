@@ -1,7 +1,45 @@
-.links {
+.header-container {
+    background-color: #455880;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem
+}
+
+.header-container .navigation {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
+    color: #fff
+}
+
+.navigation button {
+    outline: none;
+    color: #fff;
+    background-color: #A0C0D5;
+    padding: 0.6em 1.2em;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    font-size: 1em;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    font-family: inherit;
+    font-weight: 500;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem
+}
+
+.logo img {
+    width: 2rem;
 }
