@@ -7,13 +7,18 @@ function Cover() {
 
   return (
     <div className='cover-container'>
+        <div className='title-portfolio'>
+            <h1>PORTFOLIO</h1>
+        </div>
         <div className='cover'>
+            <div className='quote'>
+                <p>Sou apaixonada pela construção de sistemas que solucionem problemas reais através de interfaces bem estruturadas e com excelente usabilidade.</p>
+            </div>
             <img src={image} alt='imagem'></img>
-            <div className='title-portfolio'>
-                <h1 className='first-title'>Portfolio</h1>
-                <h2>Portfolio</h2>
-                <h2>Portfolio</h2>
-                <h2>Portfolio</h2>
+            <div className='subtitle-portfolio'>
+                <h2>PORTFOLIO</h2>
+                <h2>PORTFOLIO</h2>
+                <h2>PORTFOLIO</h2>
             </div>
             <div className='links'>
                 <a href='https://www.linkedin.com/in/thamires-stoppelli-6ab51a175/'>LinkedIn</a>

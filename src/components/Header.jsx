@@ -1,5 +1,8 @@
 import React from 'react'
+
 import logo from '../assets/logo TS.svg'
+import globe from '../assets/globe.svg'
+
 import './Header.css'
 
 function Header() {
@@ -14,6 +17,7 @@ function Header() {
         <a href="#resume">Resume</a>
         <a href="#projects">Projects</a>
         <button>Contact me</button>
+        <img src={globe} alt="idiomas"></img>
       </div>
     </div>
   )

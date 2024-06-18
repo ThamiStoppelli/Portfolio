@@ -13,11 +13,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 2.8rem;
     color: #fff
 }
 
-.navigation button {
+.header-container .navigation button {
     outline: none;
     color: #fff;
     background-color: #A0C0D5;
@@ -32,7 +32,7 @@
 
 }
 
-.logo {
+.header-container .logo {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -40,6 +40,17 @@
     gap: 1rem
 }
 
-.logo img {
+.header-container .logo img {
     width: 2rem;
 }
+
+.header-container .logo h4 { 
+    font-weight: 500;
+}
+
+.header-container .navigation img {
+    width: 2rem;
+    cursor: pointer;
+}
+
+/* adicionar hovers */
