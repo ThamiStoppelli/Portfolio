@@ -1,0 +1,47 @@
+#resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#resume h3 {
+    margin-bottom: 1.6rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.education .education-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.education .education-card .ano {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+.education .education-card img {
+    width: 40px;
+}
+
+.education .education-card .school-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.education .education-card .school-info h4, .education .education-card .school-info p {
+    margin: 0.2rem;
+}
