@@ -1,10 +1,23 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { useLanguage } from '../context/LanguageContext';
+
 // import image from '../assets/thami1.1.png'
 import image from '../assets/teste3.png'
 import './Cover.css'
 
+const translations = {
+    pt: {
+      quote: "Sou apaixonada pela construção de sistemas que solucionem problemas reais através de interfaces bem estruturadas e com excelente usabilidade.",
+    },
+    en: {
+      quote: "I am passionate about building systems that solve real world problems through well-structured interfaces and excellent usability.",
+    },
+};
+
 function Cover() {
+
+  const { language } = useLanguage();
+  const { quote } = translations[language];
 
   return (
     <div className='cover-container'>
@@ -13,7 +26,7 @@ function Cover() {
         </div>
         <div className='cover'>
             <div className='quote'>
-                <p>Sou apaixonada pela construção de sistemas que solucionem problemas reais através de interfaces bem estruturadas e com excelente usabilidade.</p>
+                <p>{quote}</p>
             </div>
             <img src={image} alt='imagem'></img>
             <div className='subtitle-portfolio'>

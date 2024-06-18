@@ -53,4 +53,28 @@
     cursor: pointer;
 }
 
+.language-selector {
+    position: relative;
+}
+
+.language-selector .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #363636;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+  
+.language-selector .dropdown div {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+  
+.language-selector .dropdown div:hover {
+    background-color: #A0C0D5;
+}
+
 /* adicionar hovers */
