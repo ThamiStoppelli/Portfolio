@@ -5,15 +5,38 @@ import logo from '../assets/logo TS.svg'
 import globe from '../assets/globe.svg'
 import './Header.css'
 
+const translations = {
+  pt: {
+    aboutMe: "Sobre mim",
+    resume: "Currículo",
+    projects: "Projetos",
+    contactMe: "Fale comigo",
+  },
+  en: {
+    aboutMe: "About me",
+    resume: "Resume",
+    projects: "Projects",
+    contactMe: "Contact me",
+  },
+};
+
 function Header() {
 
-  const { toggleLanguage } = useLanguage();
+  const { language, toggleLanguage } = useLanguage();
+  const { aboutMe, resume, projects, contactMe } = translations[language];
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleLanguageChange = (lang) => {
     toggleLanguage(lang);
     setDropdownOpen(false);
   }
+
+  const handleScroll = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className='header-container'>
@@ -22,10 +45,10 @@ function Header() {
         <h4>Thamires Stoppelli</h4>
       </div>
       <div className="navigation">
-        <a href="#about">About me</a>
-        <a href="#resume">Resume</a>
-        <a href="#projects">Projects</a>
-        <button>Contact me</button>
+        <a href="#about" onClick={() => handleScroll('about')}>{aboutMe}</a>
+        <a href="#resume" onClick={() => handleScroll('resume')}>{resume}</a>
+        <a href="#projects" onClick={() => handleScroll('projects')}>{projects}</a>
+        <button>{contactMe}</button>
         <div className="language-selector">
           <img src={globe} alt="idiomas" onClick={() => setDropdownOpen(!dropdownOpen)} />
           {dropdownOpen && (

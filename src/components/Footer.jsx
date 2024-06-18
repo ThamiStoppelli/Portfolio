@@ -16,7 +16,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bottom">
+      <div className="bottom" id='footer'>
         &copy; {new Date().getFullYear()} MeuPortfólio | Todos os direitos reservados
       </div>
     </footer>
