@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
-import image from '../assets/thami1.png'
+// import image from '../assets/thami1.1.png'
+import image from '../assets/teste3.png'
 import './Cover.css'
 
 function Cover() {
