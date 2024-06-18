@@ -5,14 +5,22 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
 }
 
-.cover-container .cover .first-title {
+.cover-container .cover .title-portfolio {
+    margin-bottom: 1rem;
+}
+
+.cover-container .cover h1, h2 {
+    font-size: 5rem;
+    line-height: 5px;
+}
+
+.cover-container .cover h1 {
     color: #fff;
 }
 
-.cover-container .cover .second-title {
+.cover-container .cover h2 {
     color: #A0C0D5;
 }
 
@@ -23,7 +31,7 @@
     justify-content: center;
     color: #fff;
     background-color: #455880;
-    gap: 2rem;
+    gap: 0.4rem;
 }
 
 .cover-container .cover img {

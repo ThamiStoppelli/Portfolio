@@ -9,11 +9,11 @@ function Cover() {
     <div className='cover-container'>
         <div className='cover'>
             <img src={image} alt='imagem'></img>
-            <div>
+            <div className='title-portfolio'>
                 <h1 className='first-title'>Portfolio</h1>
-                <h1 className='second-title'>Portfolio</h1>
-                <h1 className='second-title'>Portfolio</h1>
-                <h1 className='second-title'>Portfolio</h1>
+                <h2>Portfolio</h2>
+                <h2>Portfolio</h2>
+                <h2>Portfolio</h2>
             </div>
             <div className='links'>
                 <a href='https://www.linkedin.com/in/thamires-stoppelli-6ab51a175/'>LinkedIn</a>
