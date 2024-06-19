@@ -7,8 +7,8 @@ import './Resume.css'
 const translations = {
   pt: {
     education: "Educação",
-    skills: "Technical skills",
-    experience: "Experience",
+    skills: "Habilidades técnicas",
+    experience: "Experiência",
     activities: "Certificações",
     hobbies: "Hobbies & Interesses",
     languages: "Idiomas",
@@ -21,8 +21,8 @@ const translations = {
   },
   en: {
     education: "Education",
-    skills: "Habilidades técnicas",
-    experience: "Experiência",
+    skills: "Technical skills",
+    experience: "Experience",
     activities: "Activities",
     hobbies: "Hobbies & Interests",
     languages: "Languages",
