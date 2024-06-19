@@ -43,7 +43,6 @@ function Cover() {
           <h2>PORTFOLIO</h2>
           <h2>PORTFOLIO</h2>
         </div>
-        {/* <div className='rectangle'></div> */}
         <div className='quote'>
           <p>{quote}</p>
           <div className='background'></div >

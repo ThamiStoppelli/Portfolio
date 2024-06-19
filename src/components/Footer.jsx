@@ -6,14 +6,8 @@ function Footer() {
     <footer>
       <div className="content">
         <div className="contact-section">
-          <span>
-            <p>Email: thamiresstoppelli@gmail.com</p>
-            <p>Telefone: +55 85 91234-5678</p>
-          </span>
-          <div>
-            <a href="https://github.com/ThamiStoppelli" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/thamires-stoppelli-6ab51a175/" target="_blank">LinkedIn</a>
-          </div>
+          <p>Email: thamires@email.com</p>
+          <p>Telefone: +55 85 99000-9000</p>
         </div>
       </div>
       <div className="bottom" id='footer'>
