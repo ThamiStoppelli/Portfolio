@@ -18,6 +18,7 @@ const translations = {
     korean: "Coreano",
     fluent: "Fluente",
     intermediate: "Intermediate",
+    current: "Atual",
   },
   en: {
     education: "Education",
@@ -32,12 +33,13 @@ const translations = {
     korean: "Korean",
     fluent: "Fluent",
     intermediate: "Intermediate",
+    current: "Current",
   },
 };
 
 function Resume() {
   const { language } = useLanguage();
-  const { education, skills, experience, activities, hobbies, languages, english, portuguese, spanish, korean, fluent, intermediate } = translations[language];
+  const { education, skills, experience, activities, hobbies, languages, english, portuguese, spanish, korean, fluent, intermediate, current } = translations[language];
 
   return (
     <div id="resume">
@@ -80,7 +82,7 @@ function Resume() {
         <div className='work'>
           <div className='work-card'>
             <img src={starImg} />
-            <p className='ano'>2023-Atual</p>
+            <p className='ano'>2023-{current}</p>
             <div className='work-info'>
               <h4>Desenvolvedora de Sistemas</h4>
               <p>Fortes Innovaro</p>
