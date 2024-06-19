@@ -13,17 +13,31 @@
     justify-content: center;
     margin: 2rem;
     width: 24rem;
+    min-width: 15rem;
 }
 
-.aboutme-container .aboutme h3 {
+/* .aboutme-container .aboutme h3 {
     font-size: 22px;
     margin: 0px;
-}
+} */
 
 .aboutme-container .aboutme h4 {
     font-size: 30px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 10px;
+}
+
+.aboutme-container .aboutme .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 1rem;
+}
+
+.aboutme-container .aboutme .links a {
+    color: #BF664D;
 }
 
 .aboutme-container .image-card {
@@ -71,3 +85,5 @@
     margin: 0px;
     padding: 0px;
 }
+
+/* display grid */

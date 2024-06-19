@@ -17,9 +17,13 @@
     color: #fff
 }
 
+.header-container .navigation a:hover {
+    color: #A0C0D5 /*#BF664D*/;
+}
+
 .header-container .navigation button {
     outline: none;
-    color: #fff;
+    color: #455880;
     background-color: #A0C0D5;
     padding: 0.6em 1.2em;
     border-radius: 16px;
@@ -29,7 +33,11 @@
     transition: border-color 0.25s;
     font-family: inherit;
     font-weight: 500;
+}
 
+.header-container .navigation button:hover {
+    color: #fff;
+    background-color: #BF664D;
 }
 
 .header-container .logo {
@@ -74,7 +82,9 @@
 }
   
 .language-selector .dropdown div:hover {
-    background-color: #A0C0D5;
+    color: #A0C0D5;
 }
+
+
 
 /* adicionar hovers */

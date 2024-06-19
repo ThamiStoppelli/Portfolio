@@ -35,6 +35,10 @@ function AboutMe() {
         {/* <h3>{section}</h3> */}
         <h4>{greeting}</h4>
         <p>{description}</p>
+        <div className='links'>
+          <a href='https://www.linkedin.com/in/thamires-stoppelli-6ab51a175/'>LinkedIn</a>
+          <a href='https://github.com/ThamiStoppelli'>GitHub</a>
+        </div>
         {/* baixar pdf do resume */}
       </div>
       <div className='image-card'>

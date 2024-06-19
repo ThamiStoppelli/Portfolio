@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { useLanguage } from '../context/LanguageContext';
 
 // import image from '../assets/thami1.1.png'
-import image from '../assets/teste3.png'
+// import image from '../assets/teste3.png'
+import image from '../assets/teste2.png'
 import './Cover.css'
 
 const translations = {
@@ -42,10 +43,6 @@ function Cover() {
                 <h2>PORTFOLIO</h2>
                 <h2>PORTFOLIO</h2>
                 <h2>PORTFOLIO</h2>
-            </div>
-            <div className='links'>
-                <a href='https://www.linkedin.com/in/thamires-stoppelli-6ab51a175/'>LinkedIn</a>
-                <a href='https://github.com/ThamiStoppelli'>GitHub</a>
             </div>
             {/* baixar pdf do resume */}
         </div>
