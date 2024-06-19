@@ -59,3 +59,15 @@
 .education .education-card .school-info h4, .education .education-card .school-info p {
     margin: 0.2rem;
 }
+
+.experience-container {
+    background-color: #A0C0D5;
+    color: #363636;
+    display: grid;
+    flex-direction: column;
+    /* estilizar display grid*/
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+}
