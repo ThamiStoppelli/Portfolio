@@ -28,14 +28,15 @@
 
 .cover-container .cover .quote {
     width: 20rem;
-    margin-top: 16rem;
-    margin-right: -14rem;
+    margin-top: 18rem;
+    margin-right: -13.5rem;
     z-index: 6;
 }
 
 .cover-container .cover .quote p {
     color: #fff;
     font-size: 14px;
+    line-height: 22px;
 }
 
 .cover-container .cover .subtitle-portfolio {

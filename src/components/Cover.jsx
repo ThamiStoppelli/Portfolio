@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useLanguage } from '../context/LanguageContext';
 
-// import image from '../assets/thami1.1.png'
+import image from '../assets/thami1.1.png'
 // import image from '../assets/teste3.png'
-import image from '../assets/teste2.png'
+// import image from '../assets/teste2.png'
 import './Cover.css'
 
 const translations = {
