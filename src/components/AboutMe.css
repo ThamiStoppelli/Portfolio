@@ -43,17 +43,16 @@
 .aboutme-container .image-card {
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    align-items: center;
+    justify-content: center;
 }
 
 .aboutme-container .image-card .me {
-    width: 16em;
-    margin-bottom: 0px;
+    width: 20em;
 }
 
 .aboutme-container .image-card .info-card {
     background-color: #363636;
-    width: 16rem;
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -61,6 +60,7 @@
     padding: 1rem 0.8rem;
     gap: 0.4rem;
     margin-top: -10px;
+    width: 18rem;
 }
 
 .aboutme-container .image-card .info-card #contact {
@@ -79,11 +79,6 @@
 
 .aboutme-container .image-card .info-card .each img {
     width: 30px;
-}
-
-.aboutme-container .image-card .info-card .each p {
-    margin: 0px;
-    padding: 0px;
 }
 
 /* display grid */

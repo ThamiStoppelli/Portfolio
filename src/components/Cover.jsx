@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { useLanguage } from '../context/LanguageContext';
 
-import image from '../assets/thami1.1.png'
+// import image from '../assets/thami1.1.png'
+import image from '../assets/teste6.png'
 // import image from '../assets/teste3.png'
 // import image from '../assets/teste2.png'
 import './Cover.css'
@@ -32,25 +33,25 @@ function Cover() {
   return (
     <div className='cover-container'>
         <div className='title-portfolio'>
-            <h1>PORTFOLIO</h1>
+          <h1>PORTFOLIO</h1>
         </div>
-        <div className='cover'>
-            <div className='quote'>
-                <p>{quote}</p>
-            </div>
-            <img src={image} alt='imagem'></img>
-            <div className='subtitle-portfolio'>
-                <h2>PORTFOLIO</h2>
-                <h2>PORTFOLIO</h2>
-                <h2>PORTFOLIO</h2>
-            </div>
-            {/* baixar pdf do resume */}
+        <div className='image'>
+          <img src={image} alt='imagem'></img>
+        </div>
+        <div className='subtitle-portfolio'>
+          <h2>PORTFOLIO</h2>
+          <h2>PORTFOLIO</h2>
+          <h2>PORTFOLIO</h2>
+        </div>
+        {/* <div className='rectangle'></div> */}
+        <div className='quote'>
+          <p>{quote}</p>
+          <div className='background'></div >
         </div>
         <div className='circle-container'>
-            <div className='circle' onClick={handleScrollDown}>
-                <h4>{scroll}</h4>
-                {/* <h4>Scroll<br /> down</h4> */}
-            </div>
+          <div className='circle' onClick={handleScrollDown}>
+            <h4>{scroll}</h4>
+          </div>
         </div>
     </div>
   )
