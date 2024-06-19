@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 2rem 14em;
+    margin: 2rem 14em 1rem;
     gap: 2rem;
 }
 .aboutme-container .aboutme {
