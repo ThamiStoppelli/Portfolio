@@ -1,7 +1,66 @@
 .projects-container {
-    margin: 2rem 0rem 2rem;
+    margin: 2rem 0rem 0rem;
     color: #fff;
     background-color: #455880;
-    padding: 2rem 0rem 12rem;
     width: 100vw;
+    padding-bottom: 1rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 4rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.projects-container .projects h3 {
+    color: #fff;
+    border-radius: 8px;
+    font-size: 32px;
+    font-weight: 500;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    width:fit-content;
+    margin-top: 2rem;
+}
+
+.projects-container .projects .pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.projects-container .projects .pagination .page {
+    background-color: #fff;
+    color: #363636;
+    outline: 2px solid #A0C0D5;
+    width:fit-content;
+    padding: 0.6rem 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.projects-container .projects .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.projects-container .projects .list .card {
+    border-radius: 8px;
+    border: 6px solid #4D4D4D; 
+    outline: 2px solid #A0C0D5;
+    background-color: #fff;
+    min-width: 16rem;
+    min-height: 10rem;
+    margin-top: 1rem;
 }

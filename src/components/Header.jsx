@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { useLanguage } from '../context/LanguageContext';
 
-import logo from '../assets/logo TS.svg'
+// import logo from '../assets/logo TS.svg'
+import logo from '../assets/logoTS-lighter.svg'
 import globe from '../assets/globe.svg'
 import './Header.css'
 
