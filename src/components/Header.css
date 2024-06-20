@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem 1rem;
+    min-width: 28rem;
 }
 
 .header-container .navigation {
@@ -45,7 +46,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1rem
+    gap: 1rem;
+    min-width: 10rem;
 }
 
 .header-container .logo img {
@@ -85,6 +87,56 @@
     color: #A0C0D5;
 }
 
+@media only screen and (max-width: 912px)  {
+    .header-container .navigation {
+        gap: 2rem;
+    }
+}
 
+@media only screen and (max-width: 812px)  {
+    .header-container .navigation {
+        gap: 1.2rem;
+    }
+}
 
-/* adicionar hovers */
+@media only screen and (max-width: 712px)  {
+    .header-container .navigation {
+        gap: 0.6rem;
+    }
+    .header-container {
+        font-size: 14px;
+    }
+    .header-container .navigation button {
+        padding: 0.6em 0.6em;
+        border-radius: 12px;
+    }
+    /* virar menu sanduiche*/
+}
+
+@media only screen and (max-width: 612px)  {
+    .header-container .navigation {
+        gap: 0.4rem;
+    }
+    .header-container {
+        font-size: 12px;
+    }
+    .header-container .navigation button {
+        padding: 0.6em 0.4em;
+        border-radius: 12px;
+    }
+    /* menu sanduiche*/
+}
+
+@media only screen and (max-width: 512px)  {
+    .header-container .navigation {
+        gap: 0.4rem;
+    }
+    .header-container {
+        font-size: 12px;
+    }
+    .header-container .navigation button {
+        padding: 0.4em 0.2em;
+        border-radius: 12px;
+    }
+    /* menu sanduiche*/
+}

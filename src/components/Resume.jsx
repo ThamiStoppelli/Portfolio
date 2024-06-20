@@ -82,7 +82,7 @@ function Resume() {
         <div className='work'>
           <div className='work-card'>
             <img src={starImg} />
-            <p className='ano'>2023-{current}</p>
+            <p className='ano'>2023-<a className='atual'>{current}</a></p>
             <div className='work-info'>
               <h4>Desenvolvedora de Sistemas</h4>
               <p>Fortes Innovaro</p>
