@@ -22,6 +22,8 @@ function Projects() {
 
   const { language } = useLanguage();
   const { projects, previous, next } = translations[language];
+  const projectsList = [1, 2, 3, 4, 5]
+  /* fix css */
 
   return (
     <div id="projects" className='projects-container'>
@@ -32,21 +34,12 @@ function Projects() {
           <div className='page'>{next}</div>
         </div>
         <div className='list'>
-          <div className='card'>
+        {projectsList.map((project) => (
+          <div className='card' key={project}>
             {/* <img src='' alt='projeto 1'/> */}
           </div>
-          <div className='card'>
-            {/* <img src='' alt='projeto 1'/> */}
-          </div>
-          <div className='card'>
-            {/* <img src='' alt='projeto 1'/> */}
-          </div>
-          <div className='card'>
-            {/* <img src='' alt='projeto 1'/> */}
-          </div>
-          <div className='card'>
-            {/* <img src='' alt='projeto 1'/> */}
-          </div>
+          )
+        )}
         </div>
       </div>
     </div>
