@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import { useLanguage } from '../context/LanguageContext';
 
-// import image from '../assets/thami1.1.png'
-import image from '../assets/teste6.png'
-// import image from '../assets/teste3.png'
-// import image from '../assets/teste2.png'
+import image from '../assets/portfolio1.png'
+// import image from '../assets/teste6.png'
 import './Cover.css'
 
 const translations = {
@@ -21,7 +19,8 @@ const translations = {
 function Cover() {
 
   const { language } = useLanguage();
-  const { scroll, quote } = translations[language];
+  const currentTranslations = translations[language] || translations['en'];
+  const { scroll, quote } = currentTranslations;
 
   const handleScrollDown = () => {
     const footerSection = document.getElementById('footer');

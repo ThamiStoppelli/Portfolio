@@ -35,11 +35,72 @@ const translations = {
     intermediate: "Intermediate",
     current: "Current",
   },
+  es: {
+    education: "Educación",
+    skills: "Habilidades técnicas",
+    experience: "Experiencia",
+    activities: "Certificaciones",
+    hobbies: "Aficiones y intereses",
+    languages: "Idiomas",
+    english: "Inglés",
+    portuguese: "Portugués",
+    spanish: "Español",
+    korean: "Coreano",
+    fluent: "Fluido",
+    intermediate: "Intermedio",
+    current: "Actual",
+  },
+  kr: {
+    education: "교육",
+    skills: "기술적인 기술",
+    experience: "경험",
+    activities: "활동",
+    hobbies: "취미 및 관심사",
+    languages: "언어",
+    english: "영어",
+    portuguese: "포르투갈어",
+    spanish: "스페인어",
+    korean: "한국어",
+    fluent: "유창하다",
+    intermediate: "중급",
+    current: "현재",
+  },
+  fr: {
+    education: "Éducation",
+    skills: "Compétences techniques",
+    experience: "Expérience",
+    activities: "Certifications",
+    hobbies: "Loisirs et centres d'intérêt",
+    languages: "Langues",
+    english: "Anglais",
+    portuguese: "Portugais",
+    spanish: "Espagnol",
+    korean: "Coréen",
+    fluent: "Couramment",
+    intermediate: "Intermédiaire",
+    current: "Actuel",
+  },
+  de: {
+    education: "Education",
+    skills: "Technische Fähigkeiten",
+    experience: "Erfahrung",
+    activities: "Aktivitäten",
+    hobbies: "Hobbys & Interessen",
+    languages: "Sprachen",
+    english: "Englisch",
+    portuguese: "Portugiesisch",
+    spanish: "Spanisch",
+    korean: "Koreanisch",
+    fluent: "Fließend",
+    intermediate: "Mittelstufe",
+    current: "Aktuell",
+  },
 };
 
 function Resume() {
   const { language } = useLanguage();
-  const { education, skills, experience, activities, hobbies, languages, english, portuguese, spanish, korean, fluent, intermediate, current } = translations[language];
+  const currentTranslations = translations[language] || translations['en'];
+  const { education, skills, experience, activities, hobbies, languages, english, portuguese, spanish, korean, fluent, intermediate, current } = currentTranslations;
 
   return (
     <div id="resume">

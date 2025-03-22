@@ -24,7 +24,8 @@ const translations = {
 function Header() {
 
   const { language, toggleLanguage } = useLanguage();
-  const { aboutMe, resume, projects, contactMe } = translations[language];
+  const currentTranslations = translations[language] || translations['en'];
+  const { aboutMe, resume, projects, contactMe } = currentTranslations;
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleLanguageChange = (lang) => {
@@ -56,6 +57,10 @@ function Header() {
             <div className="dropdown">
               <div onClick={() => handleLanguageChange('pt')}>Português</div>
               <div onClick={() => handleLanguageChange('en')}>English</div>
+              <div onClick={() => handleLanguageChange('es')}>Español</div>
+              <div onClick={() => handleLanguageChange('kr')}>한국어</div>
+              <div onClick={() => handleLanguageChange('fr')}>Français</div>
+              <div onClick={() => handleLanguageChange('de')}>Deutsch</div>
             </div>
           )}
         </div>

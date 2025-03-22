@@ -21,7 +21,8 @@ const translations = {
 function Projects() {
 
   const { language } = useLanguage();
-  const { projects, previous, next } = translations[language];
+  const currentTranslations = translations[language] || translations['en'];
+  const { projects, previous, next } = currentTranslations;
   const projectsList = [1, 2, 3, 4, 5]
   /* fix css */
 

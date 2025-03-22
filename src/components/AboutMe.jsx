@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useLanguage } from '../context/LanguageContext';
 
-// import image from '../assets/thami2.png'
-import image from '../assets/teste5.png'
+import image from '../assets/portfolio2.png'
+// import image from '../assets/teste5.png'
 import locationIcon from '../assets/location.svg'
 import mailIcon from '../assets/mail.svg'
 import './AboutMe.css'
@@ -27,7 +27,8 @@ const translations = {
 function AboutMe() {
 
   const { language } = useLanguage();
-  const { section, greeting, description, location, contact } = translations[language];
+  const currentTranslations = translations[language] || translations['en'];
+  const { section, greeting, description, location, contact } = currentTranslations;
 
   return (
     <div className='aboutme-container' id="about">
