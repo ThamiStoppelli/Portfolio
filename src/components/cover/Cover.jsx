@@ -1,26 +1,15 @@
 import React, { useState } from 'react'
-import { useLanguage } from '../context/LanguageContext';
+import useTranslation from '../../hooks/useTranslation';
 
-import image from '../assets/portfolio1.png'
-// import image from '../assets/teste6.png'
+import image from '../../assets/portfolio1-1.png'
+// import image from '../../assets/portfolio11.png'
+// import image from '../../assets/portfolio1.png'
+// import image from '../../assets/teste6.png'
 import './Cover.css'
 
-const translations = {
-    pt: {
-      quote: "Sou apaixonada pela construção de sistemas que solucionem problemas reais através de interfaces bem estruturadas e com excelente usabilidade.",
-      scroll: "Role para baixo",
-    },
-    en: {
-      quote: "I am passionate about building systems that solve real world problems through well-structured interfaces and excellent usability.",
-      scroll: `Scroll down`,
-    },
-};
-
 function Cover() {
-
-  const { language } = useLanguage();
-  const currentTranslations = translations[language] || translations['en'];
-  const { scroll, quote } = currentTranslations;
+  
+  const { scroll, quote } = useTranslation('cover');
 
   const handleScrollDown = () => {
     const footerSection = document.getElementById('footer');

@@ -116,7 +116,7 @@
     justify-content: center;
     width: 30rem;
     border-radius: 8px;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     /* display: grid; */
     margin-left: -2rem;
     padding-bottom: 1rem;
@@ -197,6 +197,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+}
+
+.languages-container h3 {
+    margin-top: 2rem;
 }
 
 .languages-container .list {

@@ -1,32 +1,18 @@
 import React, { useState } from 'react'
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../../context/LanguageContext';
+import useTranslation from '../../hooks/useTranslation';
 
 // import logo from '../assets/logo TS.svg'
-import logo from '../assets/logoTS-lighter.svg'
-import globe from '../assets/globe.svg'
+import logo from '../../assets/logoTS-lighter.svg'
+import globe from '../../assets/globe.svg'
 import './Header.css'
-
-const translations = {
-  pt: {
-    aboutMe: "Sobre mim",
-    resume: "Currículo",
-    projects: "Projetos",
-    contactMe: "Fale comigo",
-  },
-  en: {
-    aboutMe: "About me",
-    resume: "Resume",
-    projects: "Projects",
-    contactMe: "Contact me",
-  },
-};
 
 function Header() {
 
-  const { language, toggleLanguage } = useLanguage();
-  const currentTranslations = translations[language] || translations['en'];
-  const { aboutMe, resume, projects, contactMe } = currentTranslations;
+  const { toggleLanguage } = useLanguage();
+  const [currentLanguage, setCurrentLanguage] = useState('')
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const { aboutMe, resume, projects, contactMe } = useTranslation('header');
 
   const handleLanguageChange = (lang) => {
     toggleLanguage(lang);
@@ -53,12 +39,13 @@ function Header() {
         <button>{contactMe}</button>
         <div className="language-selector">
           <img src={globe} alt="idiomas" onClick={() => setDropdownOpen(!dropdownOpen)} />
+          <h4>{currentLanguage}</h4>
           {dropdownOpen && (
             <div className="dropdown">
               <div onClick={() => handleLanguageChange('pt')}>Português</div>
               <div onClick={() => handleLanguageChange('en')}>English</div>
               <div onClick={() => handleLanguageChange('es')}>Español</div>
-              <div onClick={() => handleLanguageChange('kr')}>한국어</div>
+              <div onClick={() => handleLanguageChange('ko')}>한국어</div>
               <div onClick={() => handleLanguageChange('fr')}>Français</div>
               <div onClick={() => handleLanguageChange('de')}>Deutsch</div>
             </div>

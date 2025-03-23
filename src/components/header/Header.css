@@ -7,7 +7,11 @@
     justify-content: space-between;
     padding: 1rem 2rem 1rem;
     min-width: 28rem;
-    margin: 0rem;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* to ensure it's above all the other content */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* visual separation */
 }
 
 .header-container .navigation {
