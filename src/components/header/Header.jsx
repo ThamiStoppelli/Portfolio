@@ -7,15 +7,25 @@ import logo from '../../assets/logoTS-lighter.svg'
 import globe from '../../assets/globe.svg'
 import './Header.css'
 
+const languageNames = {
+  pt: "Português",
+  en: "English",
+  es: "Español",
+  ko: "한국어",
+  fr: "Français",
+  de: "Deutsch",
+};
+
 function Header() {
 
   const { toggleLanguage } = useLanguage();
-  const [currentLanguage, setCurrentLanguage] = useState('')
+  const [currentLanguage, setCurrentLanguage] = useState("Português")
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const { aboutMe, resume, projects, contactMe } = useTranslation('header');
 
   const handleLanguageChange = (lang) => {
     toggleLanguage(lang);
+    setCurrentLanguage(languageNames[lang])
     setDropdownOpen(false);
   }
 
@@ -37,8 +47,8 @@ function Header() {
         <a href="#resume" onClick={() => handleScroll('resume')}>{resume}</a>
         <a href="#projects" onClick={() => handleScroll('projects')}>{projects}</a>
         <button>{contactMe}</button>
-        <div className="language-selector">
-          <img src={globe} alt="idiomas" onClick={() => setDropdownOpen(!dropdownOpen)} />
+        <div className="language-selector" onClick={() => setDropdownOpen(!dropdownOpen)}>
+          <img src={globe} alt="idiomas" />
           <h4>{currentLanguage}</h4>
           {dropdownOpen && (
             <div className="dropdown">

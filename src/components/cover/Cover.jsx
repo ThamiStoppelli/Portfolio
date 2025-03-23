@@ -8,7 +8,7 @@ import image from '../../assets/portfolio1-1.png'
 import './Cover.css'
 
 function Cover() {
-  
+
   const { scroll, quote } = useTranslation('cover');
 
   const handleScrollDown = () => {
@@ -20,26 +20,26 @@ function Cover() {
 
   return (
     <div className='cover-container'>
-        <div className='title-portfolio'>
-          <h1>PORTFOLIO</h1>
+      <div className='title-portfolio'>
+        <h1>PORTFOLIO</h1>
+      </div>
+      <div className='image'>
+        <img src={image} alt='imagem'></img>
+      </div>
+      <div className='subtitle-portfolio'>
+        <h2>PORTFOLIO</h2>
+        <h2>PORTFOLIO</h2>
+        <h2>PORTFOLIO</h2>
+      </div>
+      <div className='quote'>
+        <p>{quote}</p>
+        <div className='background'></div >
+      </div>
+      <div className='circle-container'>
+        <div className='circle' onClick={handleScrollDown}>
+          <h4>{scroll}</h4>
         </div>
-        <div className='image'>
-          <img src={image} alt='imagem'></img>
-        </div>
-        <div className='subtitle-portfolio'>
-          <h2>PORTFOLIO</h2>
-          <h2>PORTFOLIO</h2>
-          <h2>PORTFOLIO</h2>
-        </div>
-        <div className='quote'>
-          <p>{quote}</p>
-          <div className='background'></div >
-        </div>
-        <div className='circle-container'>
-          <div className='circle' onClick={handleScrollDown}>
-            <h4>{scroll}</h4>
-          </div>
-        </div>
+      </div>
     </div>
   )
 }

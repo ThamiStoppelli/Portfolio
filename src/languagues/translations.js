@@ -84,8 +84,10 @@ const translations = {
             projects: "Proyectos",
             contactMe: "Contáctame",
         },
-        // cover: {
-        // },
+        cover: {
+            quote: "Me encanta construir sistemas que resuelvan problemas del mundo real a través de interfaces bien estructuradas y excelente usabilidad.",
+            scroll: "Desplácese hacia abajo",
+        },
         // aboutMe: {
         // },
         resume: {
@@ -117,8 +119,10 @@ const translations = {
             projects: "프로젝트",
             contactMe: "연결해요",
         },
-        // cover: {
-        // },
+        cover: {
+            quote: "저는 잘 구성된 인터페이스와 뛰어난 사용성을 통해 현실 세계의 문제를 해결하는 시스템을 구축하는 데 열정적입니다.",
+            scroll: "아래로\n스크롤",
+        },
         // aboutMe: {
         // },
         resume: {
@@ -149,8 +153,10 @@ const translations = {
             projects: "Projets",
             contactMe: "Contactez-moi",
         },
-        // cover: {
-        // },
+        cover: {
+            quote: "Je suis passionné par la création de systèmes qui résolvent des problèmes du monde réel grâce à des interfaces bien structurées et une excellente convivialité.",
+            scroll: "faire défiler vers le bas",
+        },
         // aboutMe: {
         // },
         resume: {
@@ -181,8 +187,10 @@ const translations = {
             projects: "Projekte",
             contactMe: "Kontaktieren Sie mich",
         },
-        // cover: {
-        // },
+        cover: {
+            quote: "Ich entwickle leidenschaftlich gerne Systeme, die reale Probleme durch gut strukturierte Schnittstellen und hervorragende Benutzerfreundlichkeit lösen.",
+            scroll: "Nach unten scrollen",
+        },
         // aboutMe: {
         // },
         resume: {
