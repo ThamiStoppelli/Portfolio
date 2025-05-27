@@ -151,3 +151,7 @@
     }
     /* menu sanduiche*/
 }
+
+html {
+  scroll-padding-top: 4.6rem;
+}

@@ -1,6 +1,5 @@
 import React,{ useState } from 'react'
 import useTranslation from '../../hooks/useTranslation';
-
 import './Projects.css'
 
 /* criar paginação */
@@ -8,7 +7,6 @@ import './Projects.css'
 function Projects() {
   const { projects, previous, next } = useTranslation('projects');
   const projectsList = [1, 2, 3, 4, 5]
-  /* fix css */
 
   return (
     <div id="projects" className='projects-container'>

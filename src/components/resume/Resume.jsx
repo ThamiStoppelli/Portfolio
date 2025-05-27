@@ -6,6 +6,8 @@ import './Resume.css'
 
 function Resume() {
   const { education, skills, experience, activities, hobbies, languages, english, portuguese, spanish, korean, fluent, intermediate, current } = useTranslation('resume');
+  const hobbiesList = ['Viagens', 'Desenho', 'Cheerleading','Vôlei', 'BJJ', 'Leitura', 'Esportes', 'Idiomas']
+  const skillsList = ['JavaScript', 'TypeScript', 'React JS', 'Next JS', 'CSS', 'HTML', 'Git','Node JS', 'MongoDB', 'SQL', 'MySQL', 'NoSQL', 'Postgree', 'Postman', 'C#', '.NET Core', 'Testes', 'UI/UX Design', 'Figma', 'Prototipação', 'Testes de Usabilidade', 'Avaliação Heurística', 'styled-components', 'Metodologias Ágeis','Scrum', 'Kanban']
 
   return (
     <div id="resume">
@@ -41,6 +43,11 @@ function Resume() {
         </div>
         <div className='skills-container'>
           <h3>{skills}</h3>
+          <div className="grid">
+            {skillsList.map(item => (
+              <p>{item}</p>
+            ))}
+          </div>
         </div>
       </div>
       <div className='experience-container'>
@@ -126,11 +133,10 @@ function Resume() {
         </div>
         <div className='hobbies-container'>
           <h3>{hobbies}</h3>
-          <div className='list'>
-            <p>Arte</p>
-            <p>Cheerleading</p>
-            <p>Vôlei</p>
-            <p>Viagens/Leitura</p>
+          <div className="grid" /*list        */ >
+            {hobbiesList.map(item => (
+                <p>{item}</p>
+            ))}
           </div>
         </div>
       </div>

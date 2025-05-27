@@ -52,7 +52,7 @@
 }
 
 .first-block > div:nth-child(2) {
-    grid-row: 3 / 6;
+    grid-row: 1 / 6;
     grid-column: 4 / 6;
 }
 
@@ -268,3 +268,11 @@
   float: left;
 }
 -> This makes sure that the padding and border are included in the total width and height of the elements. */
+
+  
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.8rem;
+  width: 28rem;
+}
