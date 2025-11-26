@@ -12,7 +12,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "project-1",
-    name: "Finance Dashboard Web App",
+    name: "Finance Dashboard Web App", //Time Currency App
     role: "Frontend & UI/UX",
     description:
       "Responsive dashboard for financial analytics, built with React and TypeScript, focusing on clean data visualization and smooth interactions.",
@@ -22,12 +22,12 @@ export const projects: Project[] = [
       "Component-based architecture with reusable UI patterns",
       "Integrated REST APIs with clear loading and error states",
     ],
-    githubUrl: "https://github.com/ThamiStoppelli",
+    githubUrl: "https://github.com/ThamiStoppelli/Time-Currency-App",
   },
   {
     id: "project-2",
-    name: "Mobile App for IoT Control",
-    role: "Fullstack (Web & Mobile)",
+    name: "Mobile App for IoT Control", //Blizzard
+    role: "Frontend & ",
     description:
       "React Native app connected to IoT devices, allowing users to monitor and control hardware in real time.",
     techStack: ["React Native", "Node.js", "MongoDB", "IoT Integration"],
@@ -36,11 +36,12 @@ export const projects: Project[] = [
       "Developed backend endpoints for device status and actions",
       "Collaborated closely with hardware/IoT team",
     ],
+    githubUrl: "https://github.com/ThamiStoppelli/blizzard-front-end",
   },
   {
     id: "project-3",
     name: "ERP Module Refactor",
-    role: "Frontend & Systems Developer",
+    role: "UI/UX Designer & Frontend Dev", // Busca Saudavel 
     description:
       "Refactor of legacy ERP module, improving UX, performance and maintainability for business users.",
     techStack: ["JavaScript", "Nginstack", "SQL"],
@@ -49,10 +50,11 @@ export const projects: Project[] = [
       "Reduced technical debt in critical modules",
       "Worked directly with product and business stakeholders",
     ],
+    githubUrl: "https://github.com/ThamiStoppelli/busca-saudavel-frontend-web",
   },
   {
     id: "project-4",
-    name: "Design System Prototype",
+    name: "Design System Prototype", //Cuidar Psi
     role: "UI/UX Designer & Frontend Dev",
     description:
       "Internal design system prototype with reusable components, typography and color tokens.",

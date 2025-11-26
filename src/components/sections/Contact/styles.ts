@@ -22,14 +22,6 @@ export const ContactList = styled.div`
   font-size: 13px;
 `;
 
-// export const ContactItem = styled.a`
-//   color: ${({ theme }) => theme.colors.textPrimary};
-
-//   &:hover {
-//     text-decoration: underline;
-//   }
-// `;
-
 export const ContactItem = styled.a`
   display: flex;
   align-items: center;
