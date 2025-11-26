@@ -1,4 +1,3 @@
-// src/components/common/ProjectCard/index.tsx
 import React from "react";
 import type { Project } from "../../../data/projects";
 import * as S from "./styles";

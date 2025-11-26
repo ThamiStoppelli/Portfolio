@@ -1,4 +1,3 @@
-// src/components/layout/Layout/index.tsx
 import React from "react";
 import * as S from "./styles";
 import { Navbar } from "../Navbar";

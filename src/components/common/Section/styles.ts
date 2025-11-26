@@ -1,4 +1,3 @@
-// src/components/common/Section/styles.ts
 import styled from "styled-components";
 
 export const SectionWrapper = styled.section<{ $withSurface?: boolean }>`

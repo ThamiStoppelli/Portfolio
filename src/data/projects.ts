@@ -1,4 +1,3 @@
-// src/data/projects.ts
 export type Project = {
   id: string;
   name: string;

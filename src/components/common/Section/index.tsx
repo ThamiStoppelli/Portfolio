@@ -1,4 +1,3 @@
-// src/components/common/Section/index.tsx
 import React from "react";
 import * as S from "./styles";
 

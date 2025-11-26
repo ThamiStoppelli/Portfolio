@@ -1,4 +1,3 @@
-// src/components/common/ProjectCard/styles.ts
 import styled from "styled-components";
 
 export const Card = styled.article`
