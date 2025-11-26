@@ -8,7 +8,7 @@ export const Experience: React.FC = () => {
     <Section
       id="experience"
       title="Experience"
-      subtitle="Professional experience across ERP, innovation labs and enterprise projects."
+      subtitle="Professional experience across enterprise projects, financial technology, innovation labs and ERP."
     >
       <S.List>
         {experiences.map((exp) => (

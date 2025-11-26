@@ -22,10 +22,31 @@ export const ContactList = styled.div`
   font-size: 13px;
 `;
 
+// export const ContactItem = styled.a`
+//   color: ${({ theme }) => theme.colors.textPrimary};
+
+//   &:hover {
+//     text-decoration: underline;
+//   }
+// `;
+
 export const ContactItem = styled.a`
-  color: ${({ theme }) => theme.colors.textPrimary};
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: ${({ theme }) => theme.colors.text};
+  
+  text-decoration: none;
+  transition: 0.2s ease;
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
 
   &:hover {
-    text-decoration: underline;
+    color: ${({ theme }) => theme.colors.accent};
   }
 `;
+

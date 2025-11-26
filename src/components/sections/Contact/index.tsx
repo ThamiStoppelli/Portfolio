@@ -1,5 +1,8 @@
 import React from "react";
 import { Section } from "../../common/Section";
+import githubIcon from "../../../assets/svgs/github.svg";
+import linkedinIcon from "../../../assets/svgs/linked in.svg";
+import emailIcon from "../../../assets/svgs/mail.svg";
 import * as S from "./styles";
 
 export const Contact: React.FC = () => {
@@ -24,21 +27,24 @@ export const Contact: React.FC = () => {
 
         <S.ContactList>
           <S.ContactItem href="mailto:thamiresstoppelli@gmail.com">
-            Email: thamiresstoppelli@gmail.com
+            <img src={emailIcon} alt="Email" />
+            thamiresstoppelli@gmail.com
           </S.ContactItem>
           <S.ContactItem
             href="https://www.linkedin.com/in/thamires-stoppelli"
             target="_blank"
             rel="noreferrer"
           >
-            LinkedIn: linkedin.com/in/thamires-stoppelli
+            <img src={linkedinIcon} alt="LinkedIn" />
+            linkedin.com/in/thamires-stoppelli
           </S.ContactItem>
           <S.ContactItem
             href="https://github.com/ThamiStoppelli"
             target="_blank"
             rel="noreferrer"
           >
-            GitHub: github.com/ThamiStoppelli
+            <img src={githubIcon} alt="GitHub" />
+            github.com/ThamiStoppelli
           </S.ContactItem>
         </S.ContactList>
       </S.ContactGrid>

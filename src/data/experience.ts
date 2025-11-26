@@ -56,7 +56,7 @@ export const experiences: ExperienceItem[] = [
     location: "Fortaleza, Brazil",
     bullets: [
       "Front-end development and UI prototyping for academic software.",
-      "Co-authored two scientific articles on digital innovation."
+      "Authored two scientific articles on digital innovation projects I worked directly on."
     ]
   }
 ];
