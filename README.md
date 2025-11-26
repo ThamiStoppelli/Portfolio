@@ -1,7 +1,6 @@
-# Thamires Stoppelli – Portfolio
+# Portfolio
 
-Personal portfolio website for **Thamires Stoppelli**, a Frontend & UI/UX Developer with fullstack experience.  
-This project showcases my work, tech stack and background in a clean, product-style layout focused on usability and visual clarity.
+My Personal portfolio website as a Frontend & UI/UX Developer with fullstack experience. This project showcases my work, tech stack and background in a clean, product-style layout focused on usability and visual clarity.
 
 > Built with **React + TypeScript + Vite** and **styled-components**, following a component-based architecture and UI/UX best practices.
 
