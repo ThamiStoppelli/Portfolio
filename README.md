@@ -103,3 +103,12 @@ src/
 
   App.tsx
   main.tsx
+```
+
+### Quick start
+
+```text
+bash
+npm install
+npm run dev
+```
