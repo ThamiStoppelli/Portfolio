@@ -27,7 +27,7 @@ export const ContactItem = styled.a`
   align-items: center;
   gap: 12px;
   font-size: 0.8rem;
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.textPrimary};
   
   text-decoration: none;
   transition: 0.2s ease;
