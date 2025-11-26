@@ -33,6 +33,16 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
             GitHub
           </S.Link>
         )}
+        {project.figmaUrl && (
+          <S.Link href={project.figmaUrl} target="_blank" rel="noreferrer">
+            Figma
+          </S.Link>
+        )}
+        {project.additionalInfo && (
+          <S.Link href={project.additionalInfo} target="_blank" rel="noreferrer">
+            Additional Info
+          </S.Link>
+        )}
         {project.liveUrl && project.liveUrl !== "#" && (
           <S.Link href={project.liveUrl} target="_blank" rel="noreferrer">
             Live demo
