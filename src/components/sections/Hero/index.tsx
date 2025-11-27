@@ -15,12 +15,12 @@ export const Hero: React.FC = () => {
           and a strong UI/UX mindset. I care about clean interfaces, good architecture
           and digital experiences that feel effortless.
         </S.HeroText>
-        <S.HeroChips>
-          <S.Chip>React & Angular</S.Chip>
-          <S.Chip>UI/UX Design</S.Chip>
-          <S.Chip>Node.js & C#/.NET</S.Chip>
-          <S.Chip>Remote · Worldwide</S.Chip>
-        </S.HeroChips>
+        <S.HeroTags>
+          <S.Tag>React & Angular</S.Tag>
+          <S.Tag>UI/UX Design</S.Tag>
+          <S.Tag>Node.js & C#/.NET</S.Tag>
+          <S.Tag>Remote · Worldwide</S.Tag>
+        </S.HeroTags>
         <S.HeroButtons>
           <S.PrimaryButton
             href="mailto:thamiresstoppelli@gmail.com"

@@ -28,10 +28,10 @@ export const projects: Project[] = [
       "Data Visualization"
     ],
     highlights: [
-      "Designed interactive UI prototypes and intuitive navigation flows using UCD principles.",
       "Displayed real-time and historical energy consumption through dynamic charts.",
       "Enabled remote control of electrical devices (on/off) via the web system.",
-      "Implemented scheduling features for automatic device operation to reduce energy waste."
+      "Implemented scheduling features for automatic device operation to reduce energy waste.",
+      "Developed highly detailed responsive interfaces with multiple functionalities."
     ],
     githubUrl: "https://github.com/ThamiStoppelli/blizzard-front-end",
     figmaUrl: "https://www.figma.com/proto/NB1BU9XnDSsBuZ4aR1SvAt/Blizzard--Copy---Copy-?page-id=47%3A3&node-id=67-12&p=f&viewport=71%2C126%2C0.02&t=DfPJfOTiqIF9q70m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=67%3A12"
@@ -53,10 +53,10 @@ export const projects: Project[] = [
     ],
     highlights: [
       "Developed a user-friendly search experience focused on food allergies and dietary restrictions.",
-      "Implemented customizable filters for ingredients, allergens and nutritional components.",
+      "Implemented customizable filters for allergens and nutritional components.",
       "Built features for saving favorite products and personalized user preferences.",
-      "Integrated nutritional tips provided by health and nutrition professionals.",
-      "Designed a clean, accessible and responsive interface for both web and mobile usage."
+      "Integrated nutritional tips provided by health professionals.",
+      "Designed clean, accessible and responsive web and mobile interfaces."
     ],
     githubUrl: "https://github.com/ThamiStoppelli/busca-saudavel-frontend-web",
     figmaUrl: "https://www.figma.com/proto/oXi5IgGHMEtEAn9KBCSrFT/Projeto-Aplicado---Busca-Saudavel?page-id=1%3A2&node-id=460-2523&p=f&viewport=-676%2C-381%2C0.02&t=0WIUdkKSUTju6bP0-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=460%3A2523&show-proto-sidebar=1",

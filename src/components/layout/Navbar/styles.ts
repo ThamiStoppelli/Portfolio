@@ -34,7 +34,7 @@ export const BrandName = styled.span`
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 12px;
   color: ${({ theme }) => theme.colors.textSecondary};
 `;
 
@@ -60,12 +60,13 @@ export const NavLink = styled.button`
   transition: background 0.18s ease, color 0.18s ease;
 
   &:hover {
-    background: ${({ theme }) => theme.colors.chipBg};
+    background: ${({ theme }) => theme.colors.tagBg};
     color: ${({ theme }) => theme.colors.textPrimary};
   }
 `;
 
 export const NavCta = styled.a`
+  all: unset;
   padding: 8px 16px;
   border-radius: 999px;
   background: ${({ theme }) => theme.colors.accent};

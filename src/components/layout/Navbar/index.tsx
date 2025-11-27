@@ -23,9 +23,14 @@ export const Navbar: React.FC = () => {
         <S.NavLink onClick={() => scrollToSection("experience")}>
           Experience
         </S.NavLink>
+        <S.NavLink onClick={() => scrollToSection("education")}>
+          Education
+        </S.NavLink>
       </S.NavLinks>
 
-      <S.NavCta href="#contact">Let’s talk</S.NavCta>
+      <S.NavCta as="button" onClick={() => scrollToSection("contact")}>
+        Let’s talk
+      </S.NavCta>
     </S.NavBar>
   );
 };

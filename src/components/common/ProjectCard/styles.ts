@@ -45,8 +45,9 @@ export const TechList = styled.div`
 export const TechTag = styled.span`
   padding: 4px 8px;
   border-radius: 999px;
-  background: ${({ theme }) => theme.colors.chipBg};
-  font-size: 11px;
+  background: ${({ theme }) => theme.colors.tagBg};
+  font-size: 12px;
+  font-weight: 500;
   color: ${({ theme }) => theme.colors.textSecondary};
 `;
 
@@ -64,7 +65,7 @@ export const LinksRow = styled.div`
 `;
 
 export const Link = styled.a`
-  font-size: 11.5px;
+  font-size: 12px;
   color: ${({ theme }) => theme.colors.accentStrong};
 
   &:hover {

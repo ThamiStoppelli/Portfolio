@@ -8,7 +8,7 @@ export const theme = {
     accent: "#D9A48F",
     accentStrong: "#C78666",
     borderSoft: "#E5E1DC",
-    chipBg: "#F2E6DD",
+    tagBg: "#F2E6DD",
   },
   fonts: {
     heading:

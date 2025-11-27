@@ -41,18 +41,19 @@ export const HeroText = styled.p`
   max-width: 480px;
 `;
 
-export const HeroChips = styled.div`
+export const HeroTags = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 18px;
 `;
 
-export const Chip = styled.span`
+export const Tag = styled.span`
   padding: 6px 12px;
   border-radius: 999px;
-  background: ${({ theme }) => theme.colors.chipBg};
-  font-size: 11px;
+  background: ${({ theme }) => theme.colors.tagBg};
+  font-size: 12px;
+  font-weight: 500;
   color: ${({ theme }) => theme.colors.textSecondary};
 `;
 
@@ -106,8 +107,8 @@ export const HeroPhotoWrapper = styled.div`
 `;
 
 export const HeroPhotoCard = styled.div`
-  width: 210px;
-  height: 260px;
+  width: 320px;
+  height: 380px;
   border-radius: 28px;
   padding: 8px;
   background: rgba(255, 255, 255, 0.85);
@@ -122,4 +123,5 @@ export const HeroPhoto = styled.img`
   height: 100%;
   border-radius: 22px;
   object-fit: cover;
+  object-position: 50% 35%;
 `;
