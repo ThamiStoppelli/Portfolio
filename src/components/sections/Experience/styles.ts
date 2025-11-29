@@ -28,18 +28,21 @@ export const Role = styled.h3`
 `;
 
 export const Company = styled.span`
-  font-size: 12px;
+  font-size: 13px;
   color: ${({ theme }) => theme.colors.textSecondary};
 `;
 
 export const Meta = styled.span`
-  font-size: 11px;
+  font-size: 12px;
   color: ${({ theme }) => theme.colors.muted};
 `;
 
-export const Bullets = styled.ul`
+export const Details = styled.ul`
   margin: 6px 0 0;
   padding-left: 18px;
-  font-size: 12px;
+  font-size: 13px;
   color: ${({ theme }) => theme.colors.textSecondary};
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 `;

@@ -34,14 +34,14 @@ export const BrandName = styled.span`
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 13px;
   color: ${({ theme }) => theme.colors.textSecondary};
 `;
 
 export const NavLinks = styled.div`
   display: flex;
   gap: 14px;
-  font-size: 12px;
+  font-size: 13px;
   color: ${({ theme }) => theme.colors.textSecondary};
 
   @media (max-width: 640px) {
@@ -71,7 +71,7 @@ export const NavCta = styled.a`
   border-radius: 999px;
   background: ${({ theme }) => theme.colors.accent};
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   cursor: pointer;
   transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;

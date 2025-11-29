@@ -25,11 +25,11 @@ export const Experience: React.FC = () => {
               </div>
             </S.HeaderRow>
 
-            <S.Bullets>
-              {exp.bullets.map((b, idx) => (
+            <S.Details>
+              {exp.details.map((b, idx) => (
                 <li key={idx}>{b}</li>
               ))}
-            </S.Bullets>
+            </S.Details>
           </S.Item>
         ))}
       </S.List>

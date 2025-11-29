@@ -3,7 +3,7 @@ export type ExperienceItem = {
   role: string;
   period: string;
   location: string;
-  bullets: string[];
+  details: string[];
 };
 
 export const experiences: ExperienceItem[] = [
@@ -12,7 +12,7 @@ export const experiences: ExperienceItem[] = [
     role: "Analyst Developer",
     period: "Aug 2024 – Present",
     location: "Remote",
-    bullets: [
+    details: [
       "Development, maintenance and restructuring of legacy projects.",
       "UI/UX interface design and interactive prototypes for projects and technical proposals.",
       "Stack: JavaScript, ReactJS, Angular, .NET Core, TypeScript, PostgreSQL, Figma."
@@ -23,7 +23,7 @@ export const experiences: ExperienceItem[] = [
     role: "Systems Developer",
     period: "Oct 2023 – Jul 2024",
     location: "Fortaleza, Brazil",
-    bullets: [
+    details: [
       "ERP system development and maintenance using Nginstack and SQL.",
       "Improved existing modules and built new features for business users."
     ]
@@ -33,7 +33,7 @@ export const experiences: ExperienceItem[] = [
     role: "Fullstack Web & Mobile Developer",
     period: "May 2022 – Oct 2023",
     location: "Fortaleza, Brazil",
-    bullets: [
+    details: [
       "Built responsive frontend features with ReactJS and React Native.",
       "Developed APIs and integrations with IoT technology using Node.js.",
       "Worked with SQL and MongoDB databases for project data."
@@ -44,7 +44,7 @@ export const experiences: ExperienceItem[] = [
     role: "UI/UX Designer",
     period: "Oct 2021 – May 2022",
     location: "Fortaleza, Brazil",
-    bullets: [
+    details: [
       "Created wireframes, high-fidelity UI and interactive prototypes in Figma.",
       "Conducted UX research, requirements gathering and usability testing."
     ]
@@ -54,7 +54,7 @@ export const experiences: ExperienceItem[] = [
     role: "Scientific Initiation Scholar",
     period: "May 2022 – Feb 2023",
     location: "Fortaleza, Brazil",
-    bullets: [
+    details: [
       "Front-end development and UI prototyping for academic software.",
       "Authored two scientific articles on digital innovation projects I worked directly on."
     ]

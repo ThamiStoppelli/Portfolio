@@ -4,7 +4,7 @@ export type Project = {
   role: string;
   description: string;
   techStack: string[];
-  highlights: string[];
+  details: string[];
   githubUrl?: string;
   figmaUrl?: string;
   liveUrl?: string;
@@ -27,7 +27,7 @@ export const projects: Project[] = [
       "MongoDB",
       "Data Visualization"
     ],
-    highlights: [
+    details: [
       "Displayed real-time and historical energy consumption through dynamic charts.",
       "Enabled remote control of electrical devices (on/off) via the web system.",
       "Implemented scheduling features for automatic device operation to reduce energy waste.",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
       "MongoDB",
       "REST APIs"
     ],
-    highlights: [
+    details: [
       "Developed a user-friendly search experience focused on food allergies and dietary restrictions.",
       "Implemented customizable filters for allergens and nutritional components.",
       "Built features for saving favorite products and personalized user preferences.",
@@ -74,7 +74,7 @@ export const projects: Project[] = [
       "Styled Components", 
       "REST API"
     ],
-    highlights: [
+    details: [
       "Built real-time time zone, currency and weather comparison system",
       "Designed modular, reusable UI components for scalable features",
       "Implemented synchronized multi-currency input conversion",
@@ -97,7 +97,7 @@ export const projects: Project[] = [
         "Figma",
         "REST APIs"
     ],
-    highlights: [
+    details: [
         "Built a fully responsive frontend based on high-fidelity Figma designs.",
         "Implemented role-based access control to protect sensitive patient data.",
         "Centralized patient records, session tracking and intern supervision in a single system.",

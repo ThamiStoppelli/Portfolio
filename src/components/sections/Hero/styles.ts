@@ -52,7 +52,7 @@ export const Tag = styled.span`
   padding: 6px 12px;
   border-radius: 999px;
   background: ${({ theme }) => theme.colors.tagBg};
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   color: ${({ theme }) => theme.colors.textSecondary};
 `;

@@ -32,7 +32,7 @@ export const Tag = styled.span`
   padding: 6px 10px;
   border-radius: 999px;
   background: ${({ theme }) => theme.colors.tagBg};
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   color: ${({ theme }) => theme.colors.textSecondary};
 `;
@@ -48,7 +48,7 @@ export const ToggleButton = styled.button`
   padding: 6px 0;
   border: none;
   background: none;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   color: ${({ theme }) => theme.colors.accentStrong};
   display: inline-flex;
@@ -71,7 +71,7 @@ export const ToggleIcon = styled.span<{ $expanded: boolean }>`
 
 export const AccordionContent = styled.div`
   margin-top: 6px;
-  padding: 10px 12px;
+  padding: 10px 13px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid ${({ theme }) => theme.colors.borderSoft};

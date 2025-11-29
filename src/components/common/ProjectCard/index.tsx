@@ -21,11 +21,11 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
         ))}
       </S.TechList>
 
-      <S.Highlights>
-        {project.highlights.map((h, idx) => (
+      <S.Details>
+        {project.details.map((h, idx) => (
           <li key={idx}>{h}</li>
         ))}
-      </S.Highlights>
+      </S.Details>
 
       <S.LinksRow>
         {project.githubUrl && (

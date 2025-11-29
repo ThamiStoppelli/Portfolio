@@ -18,20 +18,20 @@ export const Card = styled.article`
 `;
 
 export const Name = styled.h3`
-  margin: 0;
+  margin: 0 0 4px;
   font-size: 15px;
   font-weight: 600;
 `;
 
 export const Role = styled.p`
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
   color: ${({ theme }) => theme.colors.muted};
 `;
 
 export const Description = styled.p`
   margin: 6px 0 4px;
-  font-size: 13px;
+  font-size: 14px;
   color: ${({ theme }) => theme.colors.textSecondary};
 `;
 
@@ -46,16 +46,19 @@ export const TechTag = styled.span`
   padding: 4px 8px;
   border-radius: 999px;
   background: ${({ theme }) => theme.colors.tagBg};
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   color: ${({ theme }) => theme.colors.textSecondary};
 `;
 
-export const Highlights = styled.ul`
+export const Details = styled.ul`
   margin: 4px 0 4px;
   padding-left: 18px;
-  font-size: 12px;
+  font-size: 13px;
   color: ${({ theme }) => theme.colors.textSecondary};
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 `;
 
 export const LinksRow = styled.div`
@@ -65,7 +68,7 @@ export const LinksRow = styled.div`
 `;
 
 export const Link = styled.a`
-  font-size: 12px;
+  font-size: 13px;
   color: ${({ theme }) => theme.colors.accentStrong};
 
   &:hover {
