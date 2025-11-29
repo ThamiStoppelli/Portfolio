@@ -35,7 +35,7 @@ export const HeroSubtitle = styled.h2`
 `;
 
 export const HeroText = styled.p`
-  margin: 0 0 18px;
+  margin: 0 0 24px;
   font-size: 14px;
   color: ${({ theme }) => theme.colors.textSecondary};
   max-width: 480px;
@@ -45,7 +45,7 @@ export const HeroTags = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
 `;
 
 export const Tag = styled.span`
