@@ -3,6 +3,7 @@ import { Section } from "../../common/Section";
 import githubIcon from "../../../assets/svgs/github.svg";
 import linkedinIcon from "../../../assets/svgs/linked in.svg";
 import emailIcon from "../../../assets/svgs/mail.svg";
+import behanceIcon from "../../../assets/svgs/behance.svg";
 import * as S from "./styles";
 
 export const Contact: React.FC = () => {
@@ -45,6 +46,14 @@ export const Contact: React.FC = () => {
           >
             <img src={githubIcon} alt="GitHub" />
             github.com/ThamiStoppelli
+          </S.ContactItem>
+          <S.ContactItem
+            href="https://www.behance.net/thamirestoppelli"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={behanceIcon} alt="Behance" />
+            behance.net/thamirestoppelli
           </S.ContactItem>
         </S.ContactList>
       </S.ContactGrid>

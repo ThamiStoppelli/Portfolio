@@ -43,6 +43,11 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
             Additional Info
           </S.Link>
         )}
+        {project.behanceUrl && (
+          <S.Link href={project.behanceUrl} target="_blank" rel="noreferrer">
+            Behance
+          </S.Link>
+        )}
         {project.liveUrl && project.liveUrl !== "#" && (
           <S.Link href={project.liveUrl} target="_blank" rel="noreferrer">
             Live demo
