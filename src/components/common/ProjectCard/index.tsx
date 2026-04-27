@@ -38,11 +38,6 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
             Figma
           </S.Link>
         )}
-        {project.additionalInfo && (
-          <S.Link href={project.additionalInfo} target="_blank" rel="noreferrer">
-            Additional Info
-          </S.Link>
-        )}
         {project.behanceUrl && (
           <S.Link href={project.behanceUrl} target="_blank" rel="noreferrer">
             Behance
@@ -51,6 +46,11 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
         {project.liveUrl && project.liveUrl !== "#" && (
           <S.Link href={project.liveUrl} target="_blank" rel="noreferrer">
             Live demo
+          </S.Link>
+        )}
+        {project.additionalInfo && (
+          <S.Link href={project.additionalInfo} target="_blank" rel="noreferrer">
+            Additional Info
           </S.Link>
         )}
       </S.LinksRow>

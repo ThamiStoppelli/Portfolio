@@ -58,7 +58,6 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/ThamiStoppelli/busca-saudavel-frontend-web",
     figmaUrl: "https://www.figma.com/proto/oXi5IgGHMEtEAn9KBCSrFT/Projeto-Aplicado---Busca-Saudavel?page-id=1%3A2&node-id=460-2523&p=f&viewport=-676%2C-381%2C0.02&t=0WIUdkKSUTju6bP0-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=460%3A2523&show-proto-sidebar=1",
-    additionalInfo: "https://www.canva.com/design/DAG51AN48oI/RmVZe5mQdI2oG0x_nTn_kA/edit?utm_content=DAG51AN48oI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     behanceUrl: "https://www.behance.net/gallery/248123099/Busca-Saudavel-The-Nutrition-Label-UIUX-Case-Study"
   },
   {
