@@ -18,7 +18,7 @@ export const Text = styled.p`
 export const ContactList = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   font-size: 13px;
 `;
 

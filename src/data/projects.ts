@@ -37,7 +37,7 @@ export const projects: Project[] = [
     figmaUrl: "https://www.figma.com/proto/NB1BU9XnDSsBuZ4aR1SvAt/Blizzard--Copy---Copy-?page-id=47%3A3&node-id=67-12&p=f&viewport=71%2C126%2C0.02&t=DfPJfOTiqIF9q70m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=67%3A12"
   },
   {
-    id: "busca-saudavel",
+    id: "buscasaudavel",
     name: "Healthy Search – Food Search & Nutrition Platform",
     role: "UI/UX Designer & Frontend Developer", 
     description:
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     behanceUrl: "https://www.behance.net/gallery/248123099/Busca-Saudavel-The-Nutrition-Label-UIUX-Case-Study"
   },
   {
-    id: "time-currency-app",
+    id: "timecurrencyapp",
     name: "Time & Currency Converter App",
     role: "Full Stack Mobile Developer & UI/UX Designer",
     description:
@@ -81,7 +81,7 @@ export const projects: Project[] = [
     //add video
   },
   {
-    id: "project-cuidar-psi",
+    id: "cuidarpsi",
     name: "Anni – Psychology Management System",
     role: "Frontend Developer",
     description:

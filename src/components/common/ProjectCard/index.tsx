@@ -1,5 +1,6 @@
 import React from "react";
 import type { Project } from "../../../data/projects";
+import { Link } from "react-router-dom";
 import * as S from "./styles";
 
 type Props = {
@@ -10,7 +11,11 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
     <S.Card>
       <div>
-        <S.Name>{project.name}</S.Name>
+        <S.Name>
+          <Link to={`/project/${project.id}`}>
+            {project.name}
+          </Link>
+        </S.Name>
         <S.Role>{project.role}</S.Role>
       </div>
       <S.Description>{project.description}</S.Description>

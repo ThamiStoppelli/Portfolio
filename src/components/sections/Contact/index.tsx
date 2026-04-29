@@ -11,10 +11,13 @@ export const Contact: React.FC = () => {
     <Section
       id="contact"
       title="Contact"
-      subtitle="Feel free to reach out for roles, collaborations or interesting projects."
+      // subtitle="Feel free to reach out for roles, collaborations or interesting projects."
     >
       <S.ContactGrid>
         <div>
+          <S.Text>
+            Feel free to reach out for roles, collaborations or interesting projects.
+          </S.Text>
           <S.Text>
             I’m currently open to frontend, UI/UX-focused and fullstack roles in
             international teams, especially remote positions where I can contribute to
