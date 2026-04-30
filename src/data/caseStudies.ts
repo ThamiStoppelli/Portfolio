@@ -1,7 +1,7 @@
 export const caseStudies = {
     buscasaudavel: {
         hero: {
-            title: "Busca Saudável",
+            title: "Busca Saudável (Healthy Search)",
             role: "UX/UI Designer • Frontend Developer",
             year: "2023",
             duration: "10 months",
@@ -27,74 +27,81 @@ export const caseStudies = {
             {
                 title: "Problem",
                 text:
-                    "Users with dietary restrictions face information overload, unclear labels and low confidence when choosing food products. The challenge was reducing cognitive effort while increasing trust and speed in decision making."
+                    "Users with dietary restrictions struggle to quickly identify safe food products due to fragmented information, unclear labeling and lack of effective filtering tools. This creates a high cognitive load and low confidence during decision making. The challenge was to simplify product discovery by improving clarity, personalization and speed, enabling safer and more efficient choices."
             },
-
             {
                 title: "Research & Discovery",
-                image: "/images/busca-saudavel/benchmarking.png",
-                text:
-                    "Research included competitor benchmarking, interviews and pain point mapping to understand frustrations around food safety, filtering and nutritional transparency."
+                blocks: [
+                    {
+                        text:"To align assumptions and identify key uncertainties, I started with a CSD matrix (Certainties, Suppositions and Doubts). This helped structure initial hypotheses around user behavior, food safety concerns and information gaps, guiding what needed validation during research.",
+                        image:"/images/busca-saudavel/CSD-matrix.png"
+                    },
+                    {
+                        text:"I then conducted competitor benchmarking to analyze how existing platforms handle food search, filtering and nutritional transparency. This revealed gaps in personalization, clarity of information and efficiency, reinforcing the need for a more intuitive and user-centered experience.",
+                        image:"/images/busca-saudavel/benchmarking.png"
+                    }
+                ]
             },
-
             {
                 title: "Target Audience",
                 image: "/images/busca-saudavel/users.png",
                 text:
                     "Three primary audiences were identified: consumers with allergies/following specific diets, nutrition professionals and conscious companies looking to promote their products."
             },
-
             {
                 title: "Key Insights",
                 image: "/images/busca-saudavel/insights.png",
                 text:
                     "Research showed that speed, personalization, immediate feedback and clarity of information were critical to building user trust."
             },
-
             {
                 title: "User Journey",
                 image: "/images/busca-saudavel/journey.png",
                 text:
                     "The core journey was mapped across search, filtering, product evaluation and favorites, simplifying the decision process."
             },
-
             {
                 title: "Information Architecture",
                 image: "/images/busca-saudavel/architecture.png",
                 text:
                     "A scalable structure was created to organize products, filters, nutritional data, educational content and personalized preferences."
             },
-
             {
                 title: "Wireframes",
                 image: "/images/busca-saudavel/wireframes.png",
                 text:
                     "Low fidelity exploration focused on usability, layout hierarchy and reducing friction before moving into high fidelity design."
             },
-
             {
                 title: "Design System",
                 image: "/images/busca-saudavel/design-system.png",
                 text:
                     "A lightweight design system was created with reusable components, visual consistency and accessibility in mind."
             },
-
+            {
+                title: "Branding & Visual Identity",
+                image: "/images/busca-saudavel/logo.png",
+                text: "The visual identity was designed to communicate clarity, trust and health. The logo combines a magnifying glass with a leaf, reinforcing the idea of searching for healthy and safe food choices. Soft green tones were selected to convey freshness and well-being, while maintaining a clean and accessible visual language across the product. The symbol bridges search and nutrition, aligning the brand with the product’s core functionality."
+            },
             {
                 title: "Final Solution",
-                image: "mockups-placeholder",
-                text:
-                    "The final responsive web product combines personalized food discovery, custom filters, nutritional analysis, educational tips and community-driven feedback."
+                blocks: [
+                    {
+                        text:"The product evolved from early wireframes to high fidelity interfaces and final implementation. The process focused on translating user needs into scalable UI components and a functional product experience.",
+                        image:"/images/busca-saudavel/process-timeline.png"
+                    },
+                    {
+                        text: "The final responsive web product combines personalized food discovery, custom filters, nutritional analysis, educational tips and community-driven feedback.",
+                        image: "/images/busca-saudavel/final-solution.png",
+                    }
+                ]
             },
-
             {
                 title: "Impact",
+                image: "/images/busca-saudavel/impact.png",
                 text:
                     "The project demonstrated how user-centered design can transform a complex and anxiety-driven task into a simpler, more trustworthy experience."
             },
-            // {
-            //     title:"Design Decisions",
-            //     text:"Used progressive disclosure..."    
-            // },
 
             // {
             //     title:"Challenges & Tradeoffs",
@@ -110,7 +117,8 @@ export const caseStudies = {
             //     title:"Key Learnings",
             //     text:"Trust is shaped as much by IA as UI."
             // }
-        ]
+        ],
+        behanceUrl: "https://www.behance.net/gallery/248123099/Busca-Saudavel-The-Nutrition-Label-UIUX-Case-Study"
     },
     
     timecurrencyapp: {

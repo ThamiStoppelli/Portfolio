@@ -14,31 +14,8 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "blizzard",
-    name: "Blizzard – Energy Monitoring & Control System",
-    role: "Frontend Developer",
-    description:
-      "Web-based system for monitoring and controlling electrical devices and energy consumption in a university environment.",
-    techStack: [
-      "JavaScript",
-      "Web Dashboards",
-      "IoT Integration",
-      "Figma",
-      "Node JS",
-      "MongoDB",
-      "Data Visualization"
-    ],
-    details: [
-      "Displayed real-time and historical energy consumption through dynamic data visualizations.",
-      "Enabled remote control of electrical devices (on/off) via the web system.",
-      "Implemented automated scheduling to optimize energy usage and reduce waste."
-    ],
-    githubUrl: "https://github.com/ThamiStoppelli/blizzard-front-end",
-    figmaUrl: "https://www.figma.com/proto/NB1BU9XnDSsBuZ4aR1SvAt/Blizzard--Copy---Copy-?page-id=47%3A3&node-id=67-12&p=f&viewport=71%2C126%2C0.02&t=DfPJfOTiqIF9q70m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=67%3A12"
-  },
-  {
     id: "buscasaudavel",
-    name: "Healthy Search – Food Search & Nutrition Platform",
+    name: "Busca Saudável (Healthy Search) – Food Search & Nutrition Platform",
     role: "UI/UX Designer & Frontend Developer", 
     description:
       "Web and mobile platform for searching food products based on nutritional composition, allergens and dietary restrictions.",
@@ -79,6 +56,29 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/ThamiStoppelli/Time-Currency-App",
     //add video
+  },
+  {
+    id: "blizzard",
+    name: "Blizzard – Energy Monitoring & Control System",
+    role: "Frontend Developer",
+    description:
+      "Web-based system for monitoring and controlling electrical devices and energy consumption in a university environment.",
+    techStack: [
+      "JavaScript",
+      "Web Dashboards",
+      "IoT Integration",
+      "Figma",
+      "Node JS",
+      "MongoDB",
+      "Data Visualization"
+    ],
+    details: [
+      "Displayed real-time and historical energy consumption through dynamic data visualizations.",
+      "Enabled remote control of electrical devices (on/off) via the web system.",
+      "Implemented automated scheduling to optimize energy usage and reduce waste."
+    ],
+    githubUrl: "https://github.com/ThamiStoppelli/blizzard-front-end",
+    figmaUrl: "https://www.figma.com/proto/NB1BU9XnDSsBuZ4aR1SvAt/Blizzard--Copy---Copy-?page-id=47%3A3&node-id=67-12&p=f&viewport=71%2C126%2C0.02&t=DfPJfOTiqIF9q70m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=67%3A12"
   },
   {
     id: "cuidarpsi",

@@ -90,20 +90,48 @@ export default function ProjectCaseStudy() {
             return (
               <S.Section key={section.title} id={id}>
                 <h2>{section.title}</h2>
+                
+                {section.blocks ? (
+                    <S.Blocks>
+                        {section.blocks?.map((block, index) => (
+                            <S.Block key={index}>
 
-                {section.text && <p>{section.text}</p>}
+                            {block.text && <p>{block.text}</p>}
 
-                {section.image && (
-                  <S.Image>
-                    <img
-                        src={section.image}
-                        alt={section.title}
-                    />
-                  </S.Image>
+                            {block.image && (
+                                <S.Image>
+                                <img src={block.image} alt={section.title} />
+                                </S.Image>
+                            )}
+
+                            </S.Block>
+                        ))}
+                    </S.Blocks>
+                    ) : (
+                    <>
+                        {section.text && <p>{section.text}</p>}
+
+                        {section.image && (
+                        <S.Image>
+                            <img src={section.image} alt={section.title} />
+                        </S.Image>
+                        )}
+                    </>
                 )}
               </S.Section>
             );
           })}
+
+          {study.behanceUrl ? (
+            <S.ExternalLink 
+                href={study.behanceUrl}
+                target="_blank"
+            >
+                View full case study on Behance →
+            </S.ExternalLink>
+          ) : (
+            <p></p>
+          )}
         </S.Content>
       </S.Layout>
       <S.CaseFooter>

@@ -19,7 +19,7 @@ export const PageEmpathy = styled.main`
 `;
 
 export const BackLink = styled(Link)`
-  font-size: 14px;
+  font-size: 16px;
   color: ${({ theme }) => theme.colors.accentStrong};
   text-decoration: none;
 
@@ -64,15 +64,15 @@ export const Description = styled.p`
 `;
 
 export const HeroVisual = styled.div`
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-  img{
-   width:100%;
-   max-width:520px;
-   height:auto;
-   display:block;
+  img {
+   width: 100%;
+   max-width: 520px;
+   height: auto;
+   display: block;
   }
 `;
 
@@ -92,7 +92,7 @@ export const SideNav = styled.nav`
   align-self: start;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 18px;
 
   a {
     font-size: 14px;
@@ -112,11 +112,11 @@ export const SideNav = styled.nav`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 50px;
 `;
 
 export const Section = styled.section`
-  scroll-margin-top: 96px;
+  scroll-margin-top: 110x;
 
   h2 {
     font-size: 32px;
@@ -159,37 +159,37 @@ export const MetricCard = styled.div`
 
 export const Image = styled.div`
   margin-top: 32px;
-//   min-height: 520px;
   border-radius: 28px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   color: ${({ theme }) => theme.colors.textSecondary};
+  //   min-height: 520px;
 `;
 
 export const CaseFooter = styled.section`
-  margin-top:140px;
-  padding-top:72px;
-  border-top:1px solid ${({theme}) => theme.colors.borderSoft};
+  margin-top: 40px;
+  padding-top: 72px;
+  border-top: 1px solid ${({theme}) => theme.colors.borderSoft};
   
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-  gap:28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 28px;
   
-  h3{
-   font-size:24px;
-   margin:0 0 20px;
+  h3 {
+   font-size: 24px;
+   margin: 0 0 20px;
    font-weight: 500;
-   letter-spacing:-0.03em;
+   letter-spacing: -0.03em;
   }
   
-  div{
-   display:flex;
-   gap:16px;
-   flex-wrap:wrap;
-   justify-content:center;
+  div {
+   display: flex;
+   gap: 16px;
+   flex-wrap: wrap;
+   justify-content: center;
   }
 `;
 
@@ -224,4 +224,34 @@ export const FooterButton = styled(Link)<{variant?: "primary" | "secondary";}>`
   &:hover{
    transform:translateY(-2px);
   }
+`;
+
+export const Blocks = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+`;
+
+export const Block = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  p {
+   margin: 0;
+  }
+  
+  p + p {
+   margin-top: 16px;
+  }
+`;
+
+export const ExternalLink = styled.a`
+font-size: 16px;
+margin-top: 10px;
+color:${({theme})=>theme.colors.accentStrong};
+text-decoration:none;
+
+&:hover{
+ text-decoration:underline;
+}
 `;

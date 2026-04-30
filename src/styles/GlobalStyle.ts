@@ -36,4 +36,8 @@ export const GlobalStyle = createGlobalStyle`
     background: ${({ theme }) => theme.colors.accent};
     color: #fff;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
 `;
