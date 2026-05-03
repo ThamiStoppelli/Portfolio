@@ -9,6 +9,7 @@ export type Project = {
   figmaUrl?: string;
   behanceUrl?: string;
   liveUrl?: string;
+  demoVideo?: string;
   additionalInfo?: string;
 };
 
@@ -39,23 +40,26 @@ export const projects: Project[] = [
   },
   {
     id: "timecurrencyapp",
-    name: "Time & Currency Converter App",
-    role: "Full Stack Mobile Developer & UI/UX Designer",
+    name: "Time & Currency App – Global Comparison Utility",
+    role: "React Native Developer & Product Designer",
     description:
-      "Mobile app aimed at globetrotters and international professionals for real-time comparison of time zones, currencies and weather across multiple cities and countries simultaneously.",
+      "Mobile application that centralizes time zones, weather and currency conversion into a single, fast comparison experience for travelers and remote workers.",
     techStack: [
-      "React", 
-      "TypeScript", 
-      "Styled Components", 
-      "REST API"
+      "React Native",
+      "TypeScript",
+      "Expo",
+      "Styled Components",
+      "REST APIs",
+      "Context API"
     ],
     details: [
-      "Built real-time comparison system for time zones, currencies and weather.",
-      "Designed modular and reusable UI components for scalable feature growth.",
-      "Optimized user experience for travelers and digital nomads."
+      "Built a multi-utility comparison system for time zones, weather conditions and currency rates.",
+      "Designed modular architecture with reusable components, services and global state management.",
+      "Implemented API integrations for geocoding, weather, timezone and currency data.",
+      "Focused on UX simplification by separating mental models and reducing cognitive load."
     ],
     githubUrl: "https://github.com/ThamiStoppelli/Time-Currency-App",
-    //add video
+    // demoVideo: "/videos/time-currency-app.mp4"
   },
   {
     id: "blizzard",

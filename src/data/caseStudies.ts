@@ -124,73 +124,135 @@ export const caseStudies = {
     timecurrencyapp: {
         hero: {
             title: "Time & Currency App",
-            role: "Fullstack Developer • Product Designer",
+            role: "React Native Developer • Product Designer",
             year: "2025",
             duration: "4 months",
-            description: "Mobile Product Case Study • Currency conversion & Time and Weather comparison",
-            heroImage: "research-placeholder"
+            description:
+            "Mobile product that unifies time zones, weather and currency comparison into a single intuitive experience",
+            heroImage: "/images/time-currency/hero-mockup.png"
         },
 
         overview: {
             challenge:
-                "Frequent travelers and remote workers often rely on multiple fragmented tools to manage time zones, weather and currency conversions.",
+            "Frequent travelers and remote workers rely on multiple fragmented tools to manage time zones, weather conditions and currency conversions, leading to constant context switching and inefficient decision-making.",
             goal:
-                "Design a lightweight all in one utility app that simplifies essential travel information through a clean and intuitive mobile experience."
+            "Design and build a lightweight, mobile-first application that consolidates essential global information into a fast, intuitive and unified experience."
         },
 
         metrics: [
-            "3 core utilities",
-            "Mobile first product",
-            "Interactive prototypes",
-            "Built with React Native"
+            "3 integrated utilities",
+            "Real-time data APIs",
+            "Cross-screen synchronization",
+            "Built with React Native + TypeScript"
         ],
 
         sections: [
             {
-                title: "Problem",
-                text:
-                    "Travelers often switch between several apps for information that should be available in one seamless experience."
+            title: "See it in action",
+            video: "/videos/time-currency-app.mp4"
             },
 
             {
-                title: "Research & Discovery",
-                image: "research-placeholder",
-                text:
-                    "Research focused on utility apps, travel workflows and simplifying information-heavy interactions."
+            title: "Current Solution",
+            image: "/images/time-currency/final-ui.png",
+            text:
+                "The application delivers a unified experience for managing global information. Users can compare time zones across multiple cities, monitor weather conditions with expandable contextual details and convert currencies using real-time exchange rates. The interface is designed around fast scanning, low friction interactions and mobile-first usability."
+            },
+            {
+            title: "Problem",
+            text:
+                "Managing time zones, weather conditions and currency conversions typically requires switching between multiple apps. This fragmented workflow forces users to repeatedly search, compare and mentally reconcile information, creating unnecessary friction in everyday decisions."
+            },
+            {
+            title: "Core Features",
+            image: "/images/time-currency/core-features-overview.png",
+            text:
+                "The product is structured around three core utilities: time comparison, weather monitoring and currency conversion. Users can dynamically add and remove cities or currencies, simulate different times, view contextual weather insights and perform real-time conversions, all within a consistent interaction model."
             },
 
             {
-                title: "User Flows",
-                image: "flow-placeholder",
-                text:
-                    "Core flows were designed around checking time zones, weather conditions and currency conversion with minimal friction."
+            title: "Interaction Design",
+            image: "/images/time-currency/interaction-patterns.png",
+            text:
+                "The interface relies on simple and predictable interaction patterns such as searchable modals, expandable data cards, toggle-based time formats, synchronization actions and inline editable inputs. These decisions reduce cognitive load and make complex comparisons intuitive on mobile devices."
             },
 
             {
-                title: "Wireframes",
-                image: "wireframe-placeholder",
-                text:
-                    "Early wireframes explored layout hierarchy, interaction speed and utility-first navigation."
+            title: "Benchmark & Market Analysis",
+            image: "/images/time-currency/benchmarking.png",
+            text:
+                "A competitive analysis across tools such as World Clock, Time Buddy, Apple Weather, Google Weather, AccuWeather, XE Currency and Wise revealed a consistent pattern: each product performs well in isolation but lacks integration. Time apps lack contextual data, weather apps are not optimized for multi-location comparison and currency apps prioritize accuracy over usability. This fragmentation highlighted the opportunity for a unified, comparison-focused experience."
+            },
+            {
+            title: "Target Use Cases",
+            image: "/images/time-currency/use-cases.png",
+            text:
+                "The product is designed for two primary contexts: frequent travelers and global remote workers. Travelers need fast access to time, weather and currency information when moving across locations, while remote workers require accurate time synchronization and contextual data to manage distributed teams and financial operations. These scenarios guided key product decisions around comparison, speed and clarity."
+            },
+            {
+            title: "Product Strategy",
+            text:
+                "Instead of merging all functionalities into a single overloaded interface, the product was divided into three focused modules: Time, Weather and Currency. Time and Weather share a location-based mental model and can be synchronized, while Currency remains independent due to its different interaction logic. This approach reduces complexity and preserves predictability."
+            },
+            {
+            title: "Early Exploration",
+            image: "/images/time-currency/wireframes.png",
+            text:
+                "Initial wireframes explored a card-based layout optimized for quick scanning and comparison. The goal was to support dynamic, real-time data while maintaining clarity, hierarchy and ease of interaction across different screen states."
+            },
+            {
+            title: "Design System",
+            image: "/images/time-currency/design-system.png",
+            text:
+                "A lightweight design system was established to ensure consistency and scalability across the product. System fonts were used to maintain native behavior, while a minimal color palette and unified iconography support fast visual scanning and clear interaction patterns."
+            },
+            {
+            title: "Visual Identity",
+            image: "/images/time-currency/logo.png",
+            text:
+                "The visual identity combines symbols of time, global context and currency into a single mark, representing the core functionality of the product. A minimal color system and soft contrast were used to maintain clarity while reinforcing a modern and cohesive interface."
             },
 
             {
-                title: "Design System",
-                image: "designsystem-placeholder",
-                text:
-                    "A minimal visual system was created to prioritize clarity, speed and consistency."
+            title: "From Concept to Implementation",
+            image: "/images/time-currency/concept-to-app.png",
+            text:
+                "The product evolved from low-fidelity wireframes into a fully functional mobile application. Design decisions were translated into real features through API integration, state management and interaction logic, bridging the gap between concept and execution."
             },
 
             {
-                title: "Final Solution",
-                image: "final-ui-placeholder",
-                text:
-                    "The final app combines time, weather and currency tools in one focused mobile experience."
+            title: "Engineering & Architecture",
+            text:
+                "The application was built using React Native, Expo and TypeScript, following a modular architecture. The codebase is organized into components, screens, services, hooks, context and storage layers, enabling scalability and maintainability. External APIs handle geocoding, weather data, timezone resolution and currency exchange rates, with service abstractions keeping UI components clean and predictable."
             },
 
             {
-                title: "Impact",
-                text:
-                    "The project explored how product simplification can improve everyday utility products."
+            title: "State & Synchronization",
+            image: "/images/time-currency/sync.png",
+            text:
+                "State management is handled through React Context combined with local state and persistent storage. A synchronization mechanism allows Time and Weather screens to share selected locations, while Currency remains independent. This separation aligns with user mental models and avoids unexpected behavior."
+            },
+
+            {
+            title: "Challenges & Tradeoffs",
+            text:
+                "Handling location data consistently across different APIs was a key challenge. The current implementation uses a simplified location model based on city, country and country code, requiring multiple resolution steps. A more robust approach using full location objects with coordinates and timezone is planned for future iterations."
+            },
+            {
+            title: "Impact & Outcomes",
+            image: "/images/time-currency/project-outcomes.png",
+            text:
+                "The project resulted in a streamlined experience that consolidates multiple workflows into a single interface. It reduces cognitive load, improves decision speed and establishes a scalable foundation for future iterations."
+            },
+            {
+            title: "Next Improvements",
+            text:
+                "Planned improvements include drag-and-drop reordering, enhanced currency selection flows, stronger fallback states for API inconsistencies, expanded datasets and refined dark mode support."
+            },
+            {
+            title: "Impact & Learnings",
+            text:
+                "This project strengthened my ability to design and build real-world mobile products while balancing user experience decisions with technical constraints. It reinforced the importance of mental models when combining multiple utilities and demonstrated how simplifying interactions can significantly improve everyday workflows."
             }
         ]
     },

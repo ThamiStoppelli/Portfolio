@@ -109,6 +109,21 @@ export default function ProjectCaseStudy() {
                     </S.Blocks>
                     ) : (
                     <>
+                        {section.video && (
+                          <>
+                            <S.Video>
+                              <video
+                                src={section.video}
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                controls
+                              />
+                            </S.Video>
+                          </>
+                        )}
+
                         {section.text && <p>{section.text}</p>}
 
                         {section.image && (

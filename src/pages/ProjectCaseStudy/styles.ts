@@ -246,12 +246,23 @@ export const Block = styled.div`
 `;
 
 export const ExternalLink = styled.a`
-font-size: 16px;
-margin-top: 10px;
-color:${({theme})=>theme.colors.accentStrong};
-text-decoration:none;
+  font-size: 16px;
+  margin-top: 10px;
+  color:${({theme})=>theme.colors.accentStrong};
+  text-decoration:none;
+  
+  &:hover{
+   text-decoration: underline;
+  }
+`;
 
-&:hover{
- text-decoration:underline;
-}
+export const Video = styled.div`
+  margin-top: 16px;
+  
+  video {
+   width: 30%;
+   max-width: 900px;
+   border-radius: 24px;
+   display: block;
+  }
 `;
