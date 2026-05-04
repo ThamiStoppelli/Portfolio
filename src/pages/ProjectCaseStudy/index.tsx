@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { caseStudies } from "../../data/caseStudies";
+import type { Block } from "../../data/caseStudies";
 import * as S from "./styles";
 
 export default function ProjectCaseStudy() {

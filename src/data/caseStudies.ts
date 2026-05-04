@@ -1,4 +1,36 @@
-export const caseStudies = {
+type Block = {
+  text?: string;
+  image?: string;
+  caption?: string;
+};
+
+type Section = {
+  title: string;
+  text?: string;
+  image?: string;
+  video?: string;
+  blocks?: Block[];
+};
+
+type CaseStudy = {
+  hero: {
+    title: string;
+    role: string;
+    year: string;
+    duration: string;
+    description: string;
+    heroImage: string;
+  };
+  overview: {
+    challenge: string;
+    goal: string;
+  };
+  metrics: string[];
+  sections: Section[];
+  behanceUrl?: string;
+};
+
+export const caseStudies: Record<string, CaseStudy> = {
     buscasaudavel: {
         hero: {
             title: "Busca Saudável (Healthy Search)",
