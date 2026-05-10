@@ -183,32 +183,11 @@ export const caseStudies: Record<string, CaseStudy> = {
             title: "See it in action",
             video: "/videos/time-currency-app.mp4"
             },
-
-            {
-            title: "Current Solution",
-            image: "/images/time-currency/final-ui.png",
-            text:
-                "The application delivers a unified experience for managing global information. Users can compare time zones across multiple cities, monitor weather conditions with expandable contextual details and convert currencies using real-time exchange rates. The interface is designed around fast scanning, low friction interactions and mobile-first usability."
-            },
             {
             title: "Problem",
             text:
                 "Managing time zones, weather conditions and currency conversions typically requires switching between multiple apps. This fragmented workflow forces users to repeatedly search, compare and mentally reconcile information, creating unnecessary friction in everyday decisions."
             },
-            {
-            title: "Core Features",
-            image: "/images/time-currency/core-features-overview.png",
-            text:
-                "The product is structured around three core utilities: time comparison, weather monitoring and currency conversion. Users can dynamically add and remove cities or currencies, simulate different times, view contextual weather insights and perform real-time conversions, all within a consistent interaction model."
-            },
-
-            {
-            title: "Interaction Design",
-            image: "/images/time-currency/interaction-patterns.png",
-            text:
-                "The interface relies on simple and predictable interaction patterns such as searchable modals, expandable data cards, toggle-based time formats, synchronization actions and inline editable inputs. These decisions reduce cognitive load and make complex comparisons intuitive on mobile devices."
-            },
-
             {
             title: "Benchmark & Market Analysis",
             image: "/images/time-currency/benchmarking.png",
@@ -227,10 +206,10 @@ export const caseStudies: Record<string, CaseStudy> = {
                 "Instead of merging all functionalities into a single overloaded interface, the product was divided into three focused modules: Time, Weather and Currency. Time and Weather share a location-based mental model and can be synchronized, while Currency remains independent due to its different interaction logic. This approach reduces complexity and preserves predictability."
             },
             {
-            title: "Early Exploration",
-            image: "/images/time-currency/wireframes.png",
+            title: "Product Evolution",
+            image: "/images/time-currency/logo-wireframes.png",
             text:
-                "Initial wireframes explored a card-based layout optimized for quick scanning and comparison. The goal was to support dynamic, real-time data while maintaining clarity, hierarchy and ease of interaction across different screen states."
+                "The product evolved from an initial visual identity into progressively more structured interface explorations. Early wireframes focused on comparison clarity, fast scanning and lightweight interaction patterns optimized for mobile usage."
             },
             {
             title: "Design System",
@@ -239,32 +218,46 @@ export const caseStudies: Record<string, CaseStudy> = {
                 "A lightweight design system was established to ensure consistency and scalability across the product. System fonts were used to maintain native behavior, while a minimal color palette and unified iconography support fast visual scanning and clear interaction patterns."
             },
             {
-            title: "Visual Identity",
-            image: "/images/time-currency/logo.png",
+            title: "Current Solution",
+            image: "/images/time-currency/final-ui.png",
             text:
-                "The visual identity combines symbols of time, global context and currency into a single mark, representing the core functionality of the product. A minimal color system and soft contrast were used to maintain clarity while reinforcing a modern and cohesive interface."
+                "The application delivers a unified experience for managing global information. Users can compare time zones across multiple cities, monitor weather conditions with expandable contextual details and convert currencies using real-time exchange rates. The interface is designed around fast scanning, low friction interactions and mobile-first usability."
+            },
+            {
+            title: "Core Features",
+            image: "/images/time-currency/core-features-overview.png",
+            text:
+                "The product is structured around three core utilities: time comparison, weather monitoring and currency conversion. Users can dynamically add and remove cities or currencies, simulate different times, view contextual weather insights and perform real-time conversions, all within a consistent interaction model."
             },
 
+            {
+            title: "Interaction Design",
+            image: "/images/time-currency/interaction-patterns.png",
+            text:
+                "The interface relies on simple and predictable interaction patterns such as searchable modals, expandable data cards, toggle-based time formats, synchronization actions and inline editable inputs. These decisions reduce cognitive load and make complex comparisons intuitive on mobile devices."
+            },
             {
             title: "From Concept to Implementation",
             image: "/images/time-currency/concept-to-app.png",
             text:
                 "The product evolved from low-fidelity wireframes into a fully functional mobile application. Design decisions were translated into real features through API integration, state management and interaction logic, bridging the gap between concept and execution."
             },
-
             {
             title: "Engineering & Architecture",
+            image: "/images/time-currency/architecture.png",
             text:
-                "The application was built using React Native, Expo and TypeScript, following a modular architecture. The codebase is organized into components, screens, services, hooks, context and storage layers, enabling scalability and maintainability. External APIs handle geocoding, weather data, timezone resolution and currency exchange rates, with service abstractions keeping UI components clean and predictable."
-            },
-
+                "The application was built using React Native, Expo and TypeScript following a modular architecture. Components, services, hooks and state layers are separated to improve scalability, maintainability and predictability across the product."            },
+            {
+            title: "Data Flow & API Orchestration",
+            image: "/images/time-currency/api-integration.png",
+            text:
+                "The application coordinates multiple external APIs through a centralized state layer. Geocoding, weather, timezone and currency services are orchestrated to minimize redundant requests, synchronize shared location data and maintain predictable rendering behavior across modules."            },
             {
             title: "State & Synchronization",
             image: "/images/time-currency/sync.png",
             text:
-                "State management is handled through React Context combined with local state and persistent storage. A synchronization mechanism allows Time and Weather screens to share selected locations, while Currency remains independent. This separation aligns with user mental models and avoids unexpected behavior."
+                "React Context combined with persistent local storage powers cross-screen synchronization between Time and Weather modules. Shared location state reduces redundant API requests while preserving predictable user behavior and fast rendering performance."
             },
-
             {
             title: "Challenges & Tradeoffs",
             text:
@@ -279,7 +272,7 @@ export const caseStudies: Record<string, CaseStudy> = {
             {
             title: "Next Improvements",
             text:
-                "Planned improvements include drag-and-drop reordering, enhanced currency selection flows, stronger fallback states for API inconsistencies, expanded datasets and refined dark mode support."
+                "Planned improvements include drag-and-drop reordering, enhanced currency selection flows, stronger fallback states for API inconsistencies, expanded datasets, refined dark mode support and deterministic location modeling for more robust synchronization."
             },
             {
             title: "Impact & Learnings",
