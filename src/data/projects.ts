@@ -11,6 +11,7 @@ export type Project = {
   liveUrl?: string;
   demoVideo?: string;
   additionalInfo?: string;
+  article?: string;
 };
 
 export const projects: Project[] = [
@@ -83,7 +84,8 @@ export const projects: Project[] = [
       "Implemented automated scheduling to optimize energy usage and reduce waste."
     ],
     githubUrl: "https://github.com/ThamiStoppelli/blizzard-front-end",
-    figmaUrl: "https://www.figma.com/proto/NB1BU9XnDSsBuZ4aR1SvAt/Blizzard--Copy---Copy-?page-id=47%3A3&node-id=67-12&p=f&viewport=71%2C126%2C0.02&t=DfPJfOTiqIF9q70m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=67%3A12"
+    figmaUrl: "https://www.figma.com/proto/NB1BU9XnDSsBuZ4aR1SvAt/Blizzard--Copy---Copy-?page-id=47%3A3&node-id=67-12&p=f&viewport=71%2C126%2C0.02&t=DfPJfOTiqIF9q70m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=67%3A12",
+    article: "https://uol.unifor.br/oul/conteudosite/F45579120220826192048457535/Artigo%20Blizzard%20software.pdf"
   },
   {
     id: "cuidarpsi",
@@ -104,6 +106,7 @@ export const projects: Project[] = [
       "Centralized patient records, session tracking and intern supervision in a single platform."
     ],
     figmaUrl: "https://www.figma.com/proto/NXRKxfrhiky4zFHYag3MYg/Cuidar-Psi--Copy-?page-id=115%3A169&node-id=1105-5411&p=f&viewport=-184%2C-8%2C0.03&t=VC79YV1sgb7oNwXn-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=748%3A390&show-proto-sidebar=1",
-    additionalInfo: "https://diariodonordeste.verdesmares.com.br/metro/psicologia-e-ferramenta-importante-para-lidar-com-perdas-e-transformacoes-de-relacoes-1.3088666"
+    additionalInfo: "https://diariodonordeste.verdesmares.com.br/metro/psicologia-e-ferramenta-importante-para-lidar-com-perdas-e-transformacoes-de-relacoes-1.3088666",
+    article: "https://uol.unifor.br/oul/conteudosite/F24273820220825172550279305/Artigo%20Cuidar-Psi.pdf"
   },
 ];

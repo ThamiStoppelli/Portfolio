@@ -58,6 +58,11 @@ export const ProjectCard: React.FC<Props> = ({ project }) => {
             Additional Info
           </S.Link>
         )}
+        {project.article && project.article !== "#" && (
+          <S.Link href={project.article} target="_blank" rel="noreferrer">
+            Article
+          </S.Link>
+        )}
       </S.LinksRow>
     </S.Card>
   );

@@ -285,71 +285,134 @@ export const caseStudies: Record<string, CaseStudy> = {
     blizzard1: {
         hero: {
             title: "Blizzard",
-            role: "Frontend Developer • Product Designer",
+            role: "Lead Frontend Developer • UX Collaboration",
             year: "2022",
             duration: "1 year",
-            description: "Energy Monitoring & Control System • IoT Dashboard Product Case Study",
-            heroImage: "research-placeholder"
+            description:
+            "Real-time energy monitoring and control platform focused on operational visibility, device management and scalable IoT integration.",
+            heroImage: "/images/blizzard/hero-mockup.png"
         },
 
         overview: {
             challenge:
-                "Design a web platform to monitor energy consumption, remotely control electrical devices and optimize energy usage in a university environment.",
+            "Universities and large facilities often struggle with fragmented monitoring systems, limited operational visibility and inefficient energy management workflows. Operators lack centralized real-time insights and intuitive interfaces for monitoring and controlling infrastructure.",
             goal:
-                "Create a reliable and intuitive dashboard that transforms complex IoT and energy data into actionable decisions."
+            "Develop a scalable real-time monitoring platform capable of consolidating energy consumption, device management and operational analytics into a centralized and intuitive dashboard experience."
         },
 
         metrics: [
             "Real-time monitoring",
-            "IoT device control",
-            "Automation scheduling",
-            "Data visualization"
+            "IoT integration",
+            "Remote device control",
+            "Awarded scientific paper"
         ],
 
         sections: [
             {
-                title: "Problem",
-                text: "Energy management systems are often fragmented, technical and difficult to use, making monitoring and control inefficient."
+            title: "My Role",
+            text:
+                "I worked as the lead frontend developer for the project, responsible for implementing the dashboard architecture, building the user interface and translating product requirements into scalable frontend solutions. I also actively participated in UX discussions, stakeholder presentations, usability decisions and technical communication throughout the project lifecycle."
             },
 
             {
-                title: "Research & Discovery",
-                image: "research-placeholder",
-                text: "User needs, energy management challenges, workflows and dashboard requirements."
+            title: "Problem Space",
+            text:
+                "Energy monitoring systems are often fragmented, overly technical and difficult to operate efficiently. Operators usually need to navigate disconnected tools, interpret complex datasets and manually monitor infrastructure health without centralized operational visibility. This creates inefficiencies in maintenance, delayed responses and poor energy optimization."
             },
 
             {
-                title: "System Architecture",
-                image: "architecture-placeholder",
-                text: "Mapping device connections, data flows and monitoring structure."
+            title: "Research & Discovery",
+            image: "/images/blizzard/research-discovery.png",
+            text:
+                "The discovery phase focused on understanding operational workflows, monitoring pain points and infrastructure management needs within a university environment. Key findings revealed the importance of real-time visibility, simplified dashboard interactions and centralized control mechanisms for operators managing multiple electrical systems simultaneously."
             },
 
             {
-                title: "User Flow",
-                image: "flow-placeholder",
-                text: "Flows for monitoring, remote control and automated scheduling."
+            title: "Benchmark & Competitive Analysis",
+            image: "/images/blizzard/benchmarking.png",
+            text:
+                "A competitive analysis was conducted across industrial monitoring and energy management platforms such as Schneider Electric EcoStruxure, Siemens Desigo CC, ABB Ability and GE Digital. Most systems prioritized technical depth but introduced high complexity, dense interfaces and steep learning curves. Blizzard aimed to simplify operational workflows through a cleaner dashboard architecture and more intuitive monitoring experience."
             },
 
             {
-                title: "Wireframes",
-                image: "wireframe-placeholder"
+            title: "Product Strategy",
+            text:
+                "The platform was designed around centralized operational visibility. Instead of exposing raw technical infrastructure directly to users, the interface abstracts complex IoT data into actionable monitoring states, device controls and automation workflows. This approach improves usability while preserving scalability for larger infrastructures."
             },
 
             {
-                title: "Dashboard Design System",
-                image: "designsystem-placeholder"
+            title: "System Architecture",
+            image: "/images/blizzard/system-architecture.png",
+            text:
+                "The system architecture connects IoT devices, monitoring services and dashboard interfaces into a centralized operational layer. Real-time infrastructure data flows through backend services into monitoring modules responsible for device visualization, automation scheduling and remote management."
             },
 
             {
-                title: "Final Solution",
-                image: "mockups-placeholder"
+            title: "User Flows",
+            image: "/images/blizzard/user-flows.png",
+            text:
+                "Core flows were designed around three primary actions: monitoring energy consumption, remotely controlling electrical devices and configuring automated operational schedules. Navigation and interaction patterns prioritized rapid status recognition and low-friction operational control."
             },
 
             {
-                title: "Impact",
-                text: "Improved visibility, control and efficiency through a centralized energy management platform."
+            title: "Early Exploration",
+            image: "/images/blizzard/wireframes.png",
+            text:
+                "Initial explorations focused on dashboard hierarchy, real-time visualization patterns and operational clarity. Early wireframes tested different layouts for monitoring density, component prioritization and rapid scanning across multiple infrastructure states."
+            },
+
+            {
+            title: "Dashboard Design System",
+            image: "/images/blizzard/design-system.png",
+            text:
+                "A modular dashboard system was established to maintain consistency across monitoring cards, charts, tables and operational controls. The visual structure prioritized readability, fast information scanning and clear hierarchy for data-heavy environments."
+            },
+
+            {
+            title: "Engineering & Frontend Architecture",
+            image: "/images/blizzard/frontend-architecture.png",
+            text:
+                "The frontend architecture was structured around modular and reusable components, enabling scalable dashboard development and maintainable real-time rendering flows. State management, API communication and visualization layers were organized to support continuous operational updates without compromising interface responsiveness."
+            },
+
+            {
+            title: "Real-Time Data Visualization",
+            image: "/images/blizzard/data-visualization.png",
+            text:
+                "The dashboard translates complex operational and energy datasets into simplified visual interfaces using charts, status indicators and monitoring modules. The goal was to reduce cognitive overload while maintaining precise operational visibility for decision-making."
+            },
+
+            {
+            title: "From Concept to Implementation",
+            image: "/images/blizzard/concept-to-implementation.png",
+            text:
+                "The project evolved from initial operational requirements into a fully functional monitoring platform through close collaboration between development, research and product discussions. Frontend implementation translated complex infrastructure workflows into scalable and intuitive dashboard interactions."
+            },
+
+            {
+            title: "Technical Stack",
+            text:
+                "The platform was developed using modern web technologies focused on scalability and real-time responsiveness. The frontend architecture relied on reusable component structures, API integrations and dynamic rendering strategies to support continuous monitoring workflows and IoT communication."
+            },
+
+            {
+            title: "Challenges & Tradeoffs",
+            text:
+                "One of the primary challenges involved balancing technical complexity with usability. Industrial monitoring systems naturally expose dense operational information, requiring careful prioritization of hierarchy, feedback states and interaction flows to avoid cognitive overload while preserving functional depth."
+            },
+
+            {
+            title: "Impact & Outcomes",
+            image: "/images/blizzard/project-outcomes.png",
+            text:
+                "Blizzard consolidated fragmented monitoring workflows into a centralized operational platform capable of improving visibility, simplifying infrastructure management and supporting more efficient energy monitoring processes. The project also resulted in an awarded scientific paper presented before an academic evaluation board."
+            },
+
+            {
+            title: "Impact & Learnings",
+            text:
+                "This project strengthened my experience building scalable frontend systems for real-world operational environments while collaborating closely with product and UX discussions. It reinforced the importance of translating technically complex workflows into interfaces that remain intuitive, actionable and operationally efficient."
             }
-
         ]
     },
 
@@ -428,7 +491,8 @@ export const caseStudies: Record<string, CaseStudy> = {
             }
         ]
     },
-
+    //spreader life
+    //gol
     credito: {
         hero: {
             title: "Credit Operations Platform",
@@ -512,7 +576,6 @@ export const caseStudies: Record<string, CaseStudy> = {
 
         ]
     },
-
     legisnote: {
         hero: {
             title: "Legisnote",
