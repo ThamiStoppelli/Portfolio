@@ -282,136 +282,123 @@ export const caseStudies: Record<string, CaseStudy> = {
         ]
     },
 
-    blizzard1: {
+    blizzard: {
         hero: {
             title: "Blizzard",
             role: "Lead Frontend Developer • UX Collaboration",
-            year: "2022",
-            duration: "1 year",
+            year: "2022–2023",
+            duration: "1 year, 5 months",
             description:
-            "Real-time energy monitoring and control platform focused on operational visibility, device management and scalable IoT integration.",
+            "IoT energy management platform for university infrastructure, focused on operational visibility, remote device control and scalable frontend architecture.",
             heroImage: "/images/blizzard/hero-mockup.png"
         },
 
         overview: {
             challenge:
-            "Universities and large facilities often struggle with fragmented monitoring systems, limited operational visibility and inefficient energy management workflows. Operators lack centralized real-time insights and intuitive interfaces for monitoring and controlling infrastructure.",
+            "UNIFOR’s maintenance division had no centralized way to monitor distributed electrical devices, identify abnormal consumption, control equipment remotely or automate daily energy routines across campus infrastructure.",
             goal:
-            "Develop a scalable real-time monitoring platform capable of consolidating energy consumption, device management and operational analytics into a centralized and intuitive dashboard experience."
+            "Build a web platform that transformed distributed IoT devices into a centralized, observable and controllable operational system for energy monitoring and infrastructure management."
         },
 
         metrics: [
-            "Real-time monitoring",
-            "IoT integration",
-            "Remote device control",
-            "Awarded scientific paper"
+            "20 AC units deployed",
+            "2-month validation",
+            "IoT + MQTT architecture",
+            "Scientific paper presented"
         ],
 
         sections: [
             {
             title: "My Role",
             text:
-                "I worked as the lead frontend developer for the project, responsible for implementing the dashboard architecture, building the user interface and translating product requirements into scalable frontend solutions. I also actively participated in UX discussions, stakeholder presentations, usability decisions and technical communication throughout the project lifecycle."
+                "I worked as the lead frontend developer and sole frontend engineer on the project. I implemented the web platform, built reusable dashboard interfaces, integrated backend APIs and translated complex operational requirements into usable frontend flows. Beyond implementation, I actively participated in requirements gathering, stakeholder presentations, UX discussions and product decisions alongside the PM, backend developer and design team."
             },
-
             {
-            title: "Problem Space",
+            title: "Problem Context",
             text:
-                "Energy monitoring systems are often fragmented, overly technical and difficult to operate efficiently. Operators usually need to navigate disconnected tools, interpret complex datasets and manually monitor infrastructure health without centralized operational visibility. This creates inefficiencies in maintenance, delayed responses and poor energy optimization."
+                "Universities are energy-intensive environments with hundreds of distributed devices such as air conditioners, lighting and water fountains. At UNIFOR, each device existed largely in isolation, making energy monitoring reactive and operational decisions harder to coordinate. The maintenance division needed a centralized way to understand what was on, what was off, what was consuming abnormally and what could be safely automated or shut down."
             },
-
             {
-            title: "Research & Discovery",
-            image: "/images/blizzard/research-discovery.png",
+            title: "Operational Complexity",
+            image: "/images/blizzard/operational-complexity.png",
             text:
-                "The discovery phase focused on understanding operational workflows, monitoring pain points and infrastructure management needs within a university environment. Key findings revealed the importance of real-time visibility, simplified dashboard interactions and centralized control mechanisms for operators managing multiple electrical systems simultaneously."
+                "The challenge was not simply building a dashboard. Blizzard had to support live device data, multiple user roles, physical-world actions, academic scheduling rules and operational safety constraints. Each interaction needed to balance speed, clarity and responsibility because turning a device on or off could affect real people inside university buildings."
             },
-
             {
-            title: "Benchmark & Competitive Analysis",
-            image: "/images/blizzard/benchmarking.png",
+            title: "Discovery & Key Insights",
+            image: "/images/blizzard/discovery-insights.png",
             text:
-                "A competitive analysis was conducted across industrial monitoring and energy management platforms such as Schneider Electric EcoStruxure, Siemens Desigo CC, ABB Ability and GE Digital. Most systems prioritized technical depth but introduced high complexity, dense interfaces and steep learning curves. Blizzard aimed to simplify operational workflows through a cleaner dashboard architecture and more intuitive monitoring experience."
+                "Requirements gathering with the DMO operations team revealed three key insights: operators searched through both spatial and categorical mental models; routine manual control should be the exception rather than the goal; and scheduling needed to follow the university’s own academic time-slot vocabulary instead of generic clock time."
             },
-
             {
-            title: "Product Strategy",
+            title: "Information Architecture",
+            image: "/images/blizzard/information-architecture.png",
             text:
-                "The platform was designed around centralized operational visibility. Instead of exposing raw technical infrastructure directly to users, the interface abstracts complex IoT data into actionable monitoring states, device controls and automation workflows. This approach improves usability while preserving scalability for larger infrastructures."
+                "The product was structured around two parallel taxonomies. Users could navigate devices spatially through buildings, rooms and equipment, or categorically through device types such as air conditioners. This dual structure respected how maintenance staff actually think: sometimes the question is where the issue is, and sometimes it is what type of device is causing it."
             },
-
             {
-            title: "System Architecture",
-            image: "/images/blizzard/system-architecture.png",
+            title: "Role-Based Information Design",
+            image: "/images/blizzard/role-based-access.png",
             text:
-                "The system architecture connects IoT devices, monitoring services and dashboard interfaces into a centralized operational layer. Real-time infrastructure data flows through backend services into monitoring modules responsible for device visualization, automation scheduling and remote management."
+                "Blizzard was designed around three operational roles: Operador, Administrador and Gestor. The interface grows with each role’s responsibilities, but access was not treated only as security. It was also an information design decision. Frontline operators do not see aggregate consumption dashboards or financial analytics because that information is not part of their daily work."
             },
-
             {
-            title: "User Flows",
-            image: "/images/blizzard/user-flows.png",
+            title: "Scheduling System",
+            image: "/images/blizzard/scheduling-system.png",
             text:
-                "Core flows were designed around three primary actions: monitoring energy consumption, remotely controlling electrical devices and configuring automated operational schedules. Navigation and interaction patterns prioritized rapid status recognition and low-friction operational control."
+                "The scheduling system was built around UNIFOR’s academic time-slot language, using blocks such as MAB, MCD, MEF, TAB, TCD, TEF, NAB and NCD. Instead of asking users to translate institutional routines into generic clock times, the interface speaks the same language already used by staff."
             },
-
             {
-            title: "Early Exploration",
-            image: "/images/blizzard/wireframes.png",
+            title: "Bulk Operations",
+            image: "/images/blizzard/bulk-operations.png",
             text:
-                "Initial explorations focused on dashboard hierarchy, real-time visualization patterns and operational clarity. Early wireframes tested different layouts for monitoring density, component prioritization and rapid scanning across multiple infrastructure states."
+                "Because operators needed to manage many devices at once, bulk actions were designed as a primary affordance. Users could select multiple devices, see the number of selected items and perform group actions through confirmation flows. Managing an entire set of devices should take a few intentional steps, not dozens of repetitive clicks."
             },
-
             {
-            title: "Dashboard Design System",
-            image: "/images/blizzard/design-system.png",
+            title: "Operational Safety Patterns",
+            image: "/images/blizzard/confirmation-modals.png",
             text:
-                "A modular dashboard system was established to maintain consistency across monitoring cards, charts, tables and operational controls. The visual structure prioritized readability, fast information scanning and clear hierarchy for data-heavy environments."
+                "Every physical-world action required confirmation. In most digital products, confirmation modals can feel like friction. In Blizzard, they were a safety mechanism. Turning off equipment in an active classroom affects physical spaces, so the interface needed to prevent accidental actions while keeping workflows efficient."
             },
-
             {
-            title: "Engineering & Frontend Architecture",
-            image: "/images/blizzard/frontend-architecture.png",
-            text:
-                "The frontend architecture was structured around modular and reusable components, enabling scalable dashboard development and maintainable real-time rendering flows. State management, API communication and visualization layers were organized to support continuous operational updates without compromising interface responsiveness."
-            },
-
-            {
-            title: "Real-Time Data Visualization",
+            title: "Dashboard & Data Visualization",
             image: "/images/blizzard/data-visualization.png",
             text:
-                "The dashboard translates complex operational and energy datasets into simplified visual interfaces using charts, status indicators and monitoring modules. The goal was to reduce cognitive overload while maintaining precise operational visibility for decision-making."
+                "The dashboard translates operational and energy data into visual surfaces that support fast decision-making. Charts, status indicators, consumption cards and alert panels were structured to make live readings, daily consumption, costs and comparative trends easier to scan without overwhelming operators or administrators."
             },
-
             {
-            title: "From Concept to Implementation",
-            image: "/images/blizzard/concept-to-implementation.png",
+            title: "Frontend & System Architecture",
+            image: "/images/blizzard/system-architecture.png",
             text:
-                "The project evolved from initial operational requirements into a fully functional monitoring platform through close collaboration between development, research and product discussions. Frontend implementation translated complex infrastructure workflows into scalable and intuitive dashboard interactions."
+                "The system connects Sonoff IoT devices to an MQTT broker, where backend services process telemetry and continuously update MongoDB. The frontend consumes this state through REST APIs using axios. The real-time guarantee lives in the backend and persistence layer, while the frontend focuses on making that constantly changing system understandable, actionable and visually stable."
             },
-
             {
-            title: "Technical Stack",
+            title: "The Sonoff Pivot",
+            image: "/images/blizzard/sonoff-pivot.png",
             text:
-                "The platform was developed using modern web technologies focused on scalability and real-time responsiveness. The frontend architecture relied on reusable component structures, API integrations and dynamic rendering strategies to support continuous monitoring workflows and IoT communication."
+                "A major technical and business decision emerged during development: replacing custom-built Blizzard hardware with commercial Sonoff IoT devices. The custom device cost around R$180 per unit, while Sonoff cost around R$88.75, reducing the estimated cost for 128 units from R$23,040 to R$11,360. Because the architecture was device-agnostic above the hardware layer, the frontend and product structure absorbed the pivot without requiring a redesign."
             },
-
             {
-            title: "Challenges & Tradeoffs",
+            title: "Design Collaboration",
+            image: "/images/blizzard/design-collaboration.png",
             text:
-                "One of the primary challenges involved balancing technical complexity with usability. Industrial monitoring systems naturally expose dense operational information, requiring careful prioritization of hierarchy, feedback states and interaction flows to avoid cognitive overload while preserving functional depth."
+                "Although my official role was frontend developer, I participated deeply in UX and product conversations. I contributed to discussions around information density, card hierarchy, empty states, scheduling flows, confirmation modals and location navigation. I was not the visual designer, but I helped ensure the implemented interface worked under real data, real workflows and real operational constraints."
             },
-
+            {
+            title: "Technical Decisions",
+            text:
+                "Several engineering decisions were made deliberately based on project context. The frontend used React, JavaScript, CSS, styled-components, axios, react-router-dom, recharts and Material UI. State management remained simple, relying on React hooks and a focused AuthContext instead of adding Redux prematurely. The architecture prioritized pragmatic delivery, maintainability and clear separation between UI, API communication and IoT data flow."
+            },
             {
             title: "Impact & Outcomes",
             image: "/images/blizzard/project-outcomes.png",
             text:
-                "Blizzard consolidated fragmented monitoring workflows into a centralized operational platform capable of improving visibility, simplifying infrastructure management and supporting more efficient energy monitoring processes. The project also resulted in an awarded scientific paper presented before an academic evaluation board."
+                "Blizzard was deployed to approximately 20 air-conditioning units in UNIFOR’s Bloco D and validated by the DMO operations team over a two-month period. The platform was operational at handoff and designed to scale to additional infrastructure categories such as lighting and water fountains. The project was also documented in a scientific article presented at UNIFOR’s XXVIII Encontro de Iniciação à Pesquisa."
             },
-
             {
-            title: "Impact & Learnings",
+            title: "Key Learnings",
             text:
-                "This project strengthened my experience building scalable frontend systems for real-world operational environments while collaborating closely with product and UX discussions. It reinforced the importance of translating technically complex workflows into interfaces that remain intuitive, actionable and operationally efficient."
+                "Blizzard taught me that frontend development in complex systems is not only about implementing screens. It is about understanding workflows, respecting domain language, designing around operational responsibility and making technical complexity usable. The project also reinforced that real-time behavior is a system property, not just a frontend feature, and that mature engineering sometimes means choosing the simpler, more maintainable solution over the most custom one."
             }
         ]
     },
