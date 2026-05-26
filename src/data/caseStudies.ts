@@ -279,7 +279,8 @@ export const caseStudies: Record<string, CaseStudy> = {
             text:
                 "This project strengthened my ability to design and build real-world mobile products while balancing user experience decisions with technical constraints. It reinforced the importance of mental models when combining multiple utilities and demonstrated how simplifying interactions can significantly improve everyday workflows."
             }
-        ]
+        ],
+        behanceUrl: "https://www.behance.net/gallery/249086161/Time-Currency-Unified-Travel-Utility-Case-Study"
     },
 
     blizzard: {
