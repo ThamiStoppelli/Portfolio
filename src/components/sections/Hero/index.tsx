@@ -8,12 +8,12 @@ export const Hero: React.FC = () => {
       <div>
         <S.HeroTitle>Hi, I’m Thamires.</S.HeroTitle>
         <S.HeroSubtitle>
-          Frontend & UI/UX Developer with fullstack experience.
+          Design Engineer — I design the interface and write the code.
         </S.HeroSubtitle>
         <S.HeroText>
-          I design and build modern, user-centered web applications using React, Angular
-          and a strong UI/UX mindset. I care about clean interfaces, good architecture
-          and digital experiences that feel effortless.
+          4+ years shipping production React/TypeScript apps. 5+ years in Figma. Italian citizen, 
+          EU work-eligible, fluent English. Currently shipping at Spread Tecnologia (remote). 
+          Open to roles where the same person owns the design file and the pull request.
         </S.HeroText>
         <S.HeroTags>
           <S.Tag>React & Angular</S.Tag>
