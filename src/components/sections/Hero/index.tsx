@@ -16,10 +16,10 @@ export const Hero: React.FC = () => {
           Open to roles where the same person owns the design file and the pull request.
         </S.HeroText>
         <S.HeroTags>
-          <S.Tag>React & Angular</S.Tag>
-          <S.Tag>UI/UX Design</S.Tag>
-          <S.Tag>Node.js & C#/.NET</S.Tag>
-          <S.Tag>Remote · Worldwide</S.Tag>
+          <S.Tag>React + TypeScript</S.Tag>
+          <S.Tag>Figma + Design Systems</S.Tag>
+          <S.Tag>Next.js + React Native</S.Tag>
+          <S.Tag>Remote · EU & Worldwide</S.Tag>
         </S.HeroTags>
         <S.HeroButtons>
           <S.PrimaryButton

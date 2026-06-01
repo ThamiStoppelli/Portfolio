@@ -1,61 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import { Section } from "../../common/Section";
 import * as S from "./styles";
 
 export const About: React.FC = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
   return (
     <Section
       id="about"
       title="About"
-      subtitle="Frontend & UI/UX developer with fullstack experience."
+      subtitle="I design the interface and write the code."
     >
       <S.AboutGrid>
         <div>
           <S.Paragraph>
-            I design and build intuitive, responsive and user-centered web applications, combining strong frontend engineering (React, Angular, TypeScript) with a solid UI/UX background.
+            I'm a Design Engineer — I live in the space between design and code, where most products either break or come alive.
           </S.Paragraph>
           <S.Paragraph>
-            I deliver clean interfaces and scalable product experiences bringing backend experience with Node.js, C#/.NET and SQL/MongoDB.
+            For 4+ years I've shipped production React and TypeScript; for 5+ years I've designed in Figma. That combination means I don't hand off mockups and hope — I design the interface and write the code that makes it real, pixel for pixel.
           </S.Paragraph>
           <S.Paragraph>
-            Fluent in English, Portuguese and Spanish, experienced in remote work across
-            multicultural teams.
+            I've built end-to-end for Gol Airlines, shaped the Brazilian market expansion of FastCare (a US wound-care platform running in 5,000+ care facilities), and I'm currently leading UI and frontend for Poupex, a Brazilian federal bank.
           </S.Paragraph>
-
-          {/* Accordion */}
-          <S.ToggleWrapper>
-            <S.ToggleButton
-              type="button"
-              onClick={() => setIsExpanded((prev) => !prev)}
-            >
-              {isExpanded ? "Show less" : "Read more about my background"}
-              <S.ToggleIcon $expanded={isExpanded}>▾</S.ToggleIcon>
-            </S.ToggleButton>
-          </S.ToggleWrapper>
-
-          {isExpanded && (
-            <S.AccordionContent>
-              <S.ParagraphSmall>
-                I’m a Frontend & UI/UX Developer with fullstack experience, specializing
-                in building intuitive, responsive and user-centered web applications. I
-                combine strong frontend engineering (React, Angular, TypeScript,
-                JavaScript) with a solid background in UI/UX design, delivering clean
-                interfaces, scalable architecture and consistent product experiences.
-              </S.ParagraphSmall>
-              <S.ParagraphSmall>
-                My backend experience with Node.js, C#/.NET and SQL/MongoDB,
-                enables smooth integrations and efficient problem-solving across the
-                entire product lifecycle. I’ve worked in ERP systems, innovation labs and
-                enterprise environments.
-              </S.ParagraphSmall>
-              <S.ParagraphSmall>
-                I am passionate about clean design, product thinking and creating digital
-                experiences that feel effortless to users.
-              </S.ParagraphSmall>
-            </S.AccordionContent>
-          )}
+          <S.Paragraph>
+            I work across React, TypeScript, Next.js, React Native and design systems — comfortable in distributed teams across multiple time zones. I hold Italian and Brazilian citizenship, speak English, Portuguese, Spanish and German, and I work remotely with teams in the EU and worldwide.
+          </S.Paragraph>
         </div>
 
         <div>
