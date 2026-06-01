@@ -7,7 +7,6 @@ export const About: React.FC = () => {
     <Section
       id="about"
       title="About"
-      subtitle="I design the interface and write the code."
     >
       <S.AboutGrid>
         <div>
