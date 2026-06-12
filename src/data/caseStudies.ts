@@ -371,7 +371,7 @@ export const caseStudies: Record<string, CaseStudy> = {
             title: "Frontend & System Architecture",
             image: "/images/blizzard/system-architecture.png",
             text:
-                "The system connects Sonoff IoT devices to an MQTT broker, where backend services process telemetry and continuously update MongoDB. The frontend consumes this state through REST APIs using axios. The real-time guarantee lives in the backend and persistence layer, while the frontend focuses on making that constantly changing system understandable, actionable and visually stable."
+                "The system connects Sonoff IoT devices to an MQTT broker, where backend services process telemetry and continuously update MongoDB. The frontend consumes operational state through REST APIs, translating telemetry, scheduling data and device status into actionable interfaces for different user roles. The real-time guarantee lives in the backend and persistence layer, while the frontend focuses on making that constantly changing system understandable, actionable and visually stable."
             },
             {
             title: "The Sonoff Pivot",

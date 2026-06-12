@@ -35,6 +35,7 @@ export const projects: Project[] = [
       "Implemented customizable filters for allergens, ingredients and nutritional components.",
       "Built features for saving favorite products and delivering personalized nutrition tips."
     ],
+    liveUrl: "https://busca-saudavel-frontend-web.vercel.app/",
     githubUrl: "https://github.com/ThamiStoppelli/busca-saudavel-frontend-web",
     figmaUrl: "https://www.figma.com/proto/oXi5IgGHMEtEAn9KBCSrFT/Projeto-Aplicado---Busca-Saudavel?page-id=1%3A2&node-id=460-2523&p=f&viewport=-676%2C-381%2C0.02&t=0WIUdkKSUTju6bP0-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=460%3A2523&show-proto-sidebar=1",
     behanceUrl: "https://www.behance.net/gallery/248123099/Busca-Saudavel-The-Nutrition-Label-UIUX-Case-Study"
@@ -83,6 +84,7 @@ export const projects: Project[] = [
       "Enabled remote control of electrical devices (on/off) via the web system.",
       "Implemented automated scheduling to optimize energy usage and reduce waste."
     ],
+    liveUrl: "https://blizzard-front-end.vercel.app/",
     githubUrl: "https://github.com/ThamiStoppelli/blizzard-front-end",
     figmaUrl: "https://www.figma.com/proto/NB1BU9XnDSsBuZ4aR1SvAt/Blizzard--Copy---Copy-?page-id=47%3A3&node-id=67-12&p=f&viewport=71%2C126%2C0.02&t=DfPJfOTiqIF9q70m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=67%3A12",
     article: "https://uol.unifor.br/oul/conteudosite/F45579120220826192048457535/Artigo%20Blizzard%20software.pdf"
