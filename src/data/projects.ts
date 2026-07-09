@@ -60,6 +60,7 @@ export const projects: Project[] = [
       "Implemented API integrations for geocoding, weather, timezone and currency data.",
       "Focused on UX simplification by separating mental models and reducing cognitive load."
     ],
+    liveUrl: "https://time-currency-ts.vercel.app/",
     githubUrl: "https://github.com/ThamiStoppelli/Time-Currency-App",
     behanceUrl: "https://www.behance.net/gallery/249086161/Time-Currency-Unified-Travel-Utility-Case-Study"
     // demoVideo: "/videos/time-currency-app.mp4"
