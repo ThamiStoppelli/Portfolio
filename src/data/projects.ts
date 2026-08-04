@@ -16,34 +16,9 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "buscasaudavel",
-    name: "Busca Saudável (Healthy Search) – Food Search & Nutrition Platform",
-    role: "UI/UX Designer & Frontend Developer", 
-    description:
-      "Web and mobile platform for searching food products based on nutritional composition, allergens and dietary restrictions.",
-    techStack: [
-      "React",
-      "JavaScript",
-      "Styled Components",
-      "React Native",
-      "Node.js",
-      "MongoDB",
-      "REST APIs"
-    ],
-    details: [
-      "Developed an intuitive food search experience focused on allergies and dietary restrictions.",
-      "Implemented customizable filters for allergens, ingredients and nutritional components.",
-      "Built features for saving favorite products and delivering personalized nutrition tips."
-    ],
-    liveUrl: "https://busca-saudavel-frontend-web.vercel.app/",
-    githubUrl: "https://github.com/ThamiStoppelli/busca-saudavel-frontend-web",
-    figmaUrl: "https://www.figma.com/proto/oXi5IgGHMEtEAn9KBCSrFT/Projeto-Aplicado---Busca-Saudavel?page-id=1%3A2&node-id=460-2523&p=f&viewport=-676%2C-381%2C0.02&t=0WIUdkKSUTju6bP0-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=460%3A2523&show-proto-sidebar=1",
-    behanceUrl: "https://www.behance.net/gallery/248123099/Busca-Saudavel-The-Nutrition-Label-UIUX-Case-Study"
-  },
-  {
     id: "timecurrencyapp",
     name: "Time & Currency App – Global Comparison Utility",
-    role: "React Native Developer & Product Designer",
+    role: "Product Designer & React Native Developer",
     description:
       "Mobile application that centralizes time zones, weather and currency conversion into a single, fast comparison experience for travelers and remote workers.",
     techStack: [
@@ -66,9 +41,55 @@ export const projects: Project[] = [
     // demoVideo: "/videos/time-currency-app.mp4"
   },
   {
+    id: "wortschatz",
+    name: "Wortschatz – Vocabulary Learning Platform",
+    role: "Product Designer & Frontend Developer",
+    description:
+      "Responsive web application for German vocabulary learning with structured deck management, local-first persistence and a focused study experience.",
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "CSS",
+      "localStorage"
+    ],
+    details: [
+      "Designed a three-stage learning model to organize vocabulary into Future Learning, Active Learning and Learned decks.",
+      "Built a responsive study experience with reusable components, custom modals and JSON import/export.",
+      "Implemented a modular architecture using React, TypeScript and custom hooks for state management and persistence."
+    ],
+    liveUrl: "https://german-flashcards-ts.vercel.app/",
+    githubUrl: "https://github.com/ThamiStoppelli/german-flashcards"
+  },
+  {
+    id: "buscasaudavel",
+    name: "Busca Saudável (Healthy Search) – Food Search & Nutrition Platform",
+    role: "Product Designer & Frontend Developer",
+    description:
+      "Web and mobile platform for searching food products based on nutritional composition, allergens and dietary restrictions.",
+    techStack: [
+      "React",
+      "JavaScript",
+      "Styled Components",
+      "React Native",
+      "Node.js",
+      "MongoDB",
+      "REST APIs"
+    ],
+    details: [
+      "Developed an intuitive food search experience focused on allergies and dietary restrictions.",
+      "Implemented customizable filters for allergens, ingredients and nutritional components.",
+      "Built features for saving favorite products and delivering personalized nutrition tips."
+    ],
+    liveUrl: "https://busca-saudavel-frontend-web.vercel.app/",
+    githubUrl: "https://github.com/ThamiStoppelli/busca-saudavel-frontend-web",
+    figmaUrl: "https://www.figma.com/proto/oXi5IgGHMEtEAn9KBCSrFT/Projeto-Aplicado---Busca-Saudavel?page-id=1%3A2&node-id=460-2523&p=f&viewport=-676%2C-381%2C0.02&t=0WIUdkKSUTju6bP0-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=460%3A2523&show-proto-sidebar=1",
+    behanceUrl: "https://www.behance.net/gallery/248123099/Busca-Saudavel-The-Nutrition-Label-UIUX-Case-Study"
+  },
+  {
     id: "blizzard",
     name: "Blizzard – Energy Monitoring & Control System",
-    role: "Frontend Developer",
+    role: "Lead Frontend Developer & UX Collaborator",
     description:
       "Web-based system for monitoring and controlling electrical devices and energy consumption in a university environment.",
     techStack: [

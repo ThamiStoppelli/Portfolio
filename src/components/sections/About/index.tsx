@@ -11,7 +11,7 @@ export const About: React.FC = () => {
       <S.AboutGrid>
         <div>
           <S.Paragraph>
-            I'm a Design Engineer — I live in the space between design and code, where most products either break or come alive.
+            Most companies hire a designer to deliver Figma files and a developer to build them. I do both — which means decisions made in design survive implementation, and the polish that usually gets lost in handoff stays.
           </S.Paragraph>
           <S.Paragraph>
             For 4+ years I've shipped production React and TypeScript; for 5+ years I've designed in Figma. That combination means I don't hand off mockups and hope — I design the interface and write the code that makes it real, pixel for pixel.

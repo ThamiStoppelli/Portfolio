@@ -66,10 +66,16 @@ export default function ProjectCaseStudy() {
         </S.SideNav>
 
         <S.Content>
-          <S.Section id="overview">
-            <h2>Overview</h2>
-            <p>{study.overview.challenge}</p>
-            <p>{study.overview.goal}</p>
+          
+          <S.Section id="key-metrics">
+
+          <h2 id="overview">Overview</h2>
+          {study.overview.map((section) => (
+            <div key={section.title}>
+              <h3>{section.title}</h3>
+              <p>{section.text}</p>
+            </div>
+              ))}
           </S.Section>
 
           <S.Section id="key-metrics">
