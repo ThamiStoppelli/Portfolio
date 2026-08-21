@@ -606,170 +606,170 @@ export const caseStudies: Record<string, CaseStudy> = {
 
     //spreader life
     //gol
-    credito: {
-        hero: {
-            title: "Credit Operations Platform",
-            role: "Product Designer • Frontend Developer",
-            year: "2025-2026",
-            duration: "on going",
-            description: "Enterprise SaaS Case Study",
-            heroImage: "research-placeholder"
-        },
+    // credito: {
+    //     hero: {
+    //         title: "Credit Operations Platform",
+    //         role: "Product Designer • Frontend Developer",
+    //         year: "2025-2026",
+    //         duration: "on going",
+    //         description: "Enterprise SaaS Case Study",
+    //         heroImage: "research-placeholder"
+    //     },
 
-        overview: {
-            challenge:
-                "Complex credit and financial workflows often create friction through dense interfaces, fragmented data and difficult operational processes.",
-            // "Enterprise credit operations involve dense data, complex decision flows and high-stakes financial processes that often create friction for users.",
-            goal:
-                "Improve enterprise usability through clearer workflows, scalable information architecture and better interaction patterns."
-        },
+    //     overview: {
+    //         challenge:
+    //             "Complex credit and financial workflows often create friction through dense interfaces, fragmented data and difficult operational processes.",
+    //         // "Enterprise credit operations involve dense data, complex decision flows and high-stakes financial processes that often create friction for users.",
+    //         goal:
+    //             "Improve enterprise usability through clearer workflows, scalable information architecture and better interaction patterns."
+    //     },
 
-        metrics: [
-            "Complex B2B workflows",
-            "Data heavy interfaces",
-            "Advanced filtering UX",
-            "Enterprise redesign"
-        ],
+    //     metrics: [
+    //         "Complex B2B workflows",
+    //         "Data heavy interfaces",
+    //         "Advanced filtering UX",
+    //         "Enterprise redesign"
+    //     ],
 
-        sections: [
-            {
-                title: "Problem",
-                text:
-                    "Users operated in highly complex financial workflows with overloaded screens, difficult filters and low efficiency in repetitive tasks."
-            },
+    //     sections: [
+    //         {
+    //             title: "Problem",
+    //             text:
+    //                 "Users operated in highly complex financial workflows with overloaded screens, difficult filters and low efficiency in repetitive tasks."
+    //         },
 
-            {
-                title: "Research & Discovery",
-                image: "research-placeholder",
-                text:
-                    "Discovery focused on workflow pain points, operational bottlenecks and opportunities to simplify critical interactions."
-            },
+    //         {
+    //             title: "Research & Discovery",
+    //             image: "research-placeholder",
+    //             text:
+    //                 "Discovery focused on workflow pain points, operational bottlenecks and opportunities to simplify critical interactions."
+    //         },
 
-            {
-                title: "Complex Filters & Saved Views",
-                image: "filters-placeholder",
-                text:
-                    "A major focus was redesigning advanced filters, saved views and conditional interactions for better usability."
-            },
+    //         {
+    //             title: "Complex Filters & Saved Views",
+    //             image: "filters-placeholder",
+    //             text:
+    //                 "A major focus was redesigning advanced filters, saved views and conditional interactions for better usability."
+    //         },
 
-            {
-                title: "Information Architecture",
-                image: "ia-placeholder",
-                text:
-                    "Navigation and data structures were reorganized to reduce cognitive load across dense enterprise processes."
-            },
+    //         {
+    //             title: "Information Architecture",
+    //             image: "ia-placeholder",
+    //             text:
+    //                 "Navigation and data structures were reorganized to reduce cognitive load across dense enterprise processes."
+    //         },
 
-            {
-                title: "Reporting & Data Visualization",
-                image: "report-placeholder",
-                text:
-                    "Complex reporting interfaces were redesigned to improve readability and decision support."
-            },
+    //         {
+    //             title: "Reporting & Data Visualization",
+    //             image: "report-placeholder",
+    //             text:
+    //                 "Complex reporting interfaces were redesigned to improve readability and decision support."
+    //         },
 
-            {
-                title: "Wireframes",
-                image: "wireframe-placeholder"
-            },
+    //         {
+    //             title: "Wireframes",
+    //             image: "wireframe-placeholder"
+    //         },
 
-            {
-                title: "System Design",
-                image: "designsystem-placeholder"
-            },
+    //         {
+    //             title: "System Design",
+    //             image: "designsystem-placeholder"
+    //         },
 
-            {
-                title: "Final Solution",
-                image: "enterprise-ui-placeholder"
-            },
+    //         {
+    //             title: "Final Solution",
+    //             image: "enterprise-ui-placeholder"
+    //         },
 
-            {
-                title: "Impact",
-                text:
-                    "The work improved clarity, efficiency and scalability across mission critical financial workflows."
-            }
+    //         {
+    //             title: "Impact",
+    //             text:
+    //                 "The work improved clarity, efficiency and scalability across mission critical financial workflows."
+    //         }
 
-        ]
-    },
-    legis: {
-        hero: {
-            title: "Legisnote",
-            role: "Product Designer • Enterprise UX",
-            year: "2026",
-            duration: "2 months (redesign and creation of new filtering system)",
-            // new feature
-            description: "B2B SaaS Product Case Study",
-            heroImage: "research-placeholder"
-        },
+    //     ]
+    // },
+    // legis: {
+    //     hero: {
+    //         title: "Legisnote",
+    //         role: "Product Designer • Enterprise UX",
+    //         year: "2026",
+    //         duration: "2 months (redesign and creation of new filtering system)",
+    //         // new feature
+    //         description: "B2B SaaS Product Case Study",
+    //         heroImage: "research-placeholder"
+    //     },
 
-        overview: {
-            challenge:
-                "Legislative monitoring requires navigating high volumes of information, complex filtering and fast decision making under constant updates.",
-            goal:
-                "Improve monitoring workflows through smarter filtering, clearer information structures and scalable interaction design."
-        },
+    //     overview: {
+    //         challenge:
+    //             "Legislative monitoring requires navigating high volumes of information, complex filtering and fast decision making under constant updates.",
+    //         goal:
+    //             "Improve monitoring workflows through smarter filtering, clearer information structures and scalable interaction design."
+    //     },
 
-        metrics: [
-            "Information heavy product",
-            "Advanced filter redesign",
-            "Complex monitoring flows",
-            "B2B SaaS UX"
-        ],
+    //     metrics: [
+    //         "Information heavy product",
+    //         "Advanced filter redesign",
+    //         "Complex monitoring flows",
+    //         "B2B SaaS UX"
+    //     ],
 
-        sections: [
-            {
-                title: "Problem",
-                text:
-                    "Users faced friction managing large information sets, confusing filters and inconsistent workflows across the platform."
-            },
+    //     sections: [
+    //         {
+    //             title: "Problem",
+    //             text:
+    //                 "Users faced friction managing large information sets, confusing filters and inconsistent workflows across the platform."
+    //         },
 
-            {
-                title: "Research & Discovery",
-                image: "research-placeholder",
-                text:
-                    "Discovery focused on understanding monitoring behaviors, workflow pain points and filtering complexity."
-            },
+    //         {
+    //             title: "Research & Discovery",
+    //             image: "research-placeholder",
+    //             text:
+    //                 "Discovery focused on understanding monitoring behaviors, workflow pain points and filtering complexity."
+    //         },
 
-            {
-                title: "Filtering Experience",
-                image: "filters-placeholder",
-                text:
-                    "A core challenge was redesigning filtering interactions to make them scalable, consistent and easier to use."
-            },
+    //         {
+    //             title: "Filtering Experience",
+    //             image: "filters-placeholder",
+    //             text:
+    //                 "A core challenge was redesigning filtering interactions to make them scalable, consistent and easier to use."
+    //         },
 
-            {
-                title: "Information Architecture",
-                image: "ia-placeholder",
-                text:
-                    "Content structures and navigation models were refined to support faster access to relevant legislative information."
-            },
+    //         {
+    //             title: "Information Architecture",
+    //             image: "ia-placeholder",
+    //             text:
+    //                 "Content structures and navigation models were refined to support faster access to relevant legislative information."
+    //         },
 
-            {
-                title: "Interaction Patterns",
-                image: "interaction-placeholder",
-                text:
-                    "Reusable interaction patterns were explored for dense workflows and data heavy screens."
-            },
+    //         {
+    //             title: "Interaction Patterns",
+    //             image: "interaction-placeholder",
+    //             text:
+    //                 "Reusable interaction patterns were explored for dense workflows and data heavy screens."
+    //         },
 
-            {
-                title: "Wireframes",
-                image: "wireframe-placeholder"
-            },
+    //         {
+    //             title: "Wireframes",
+    //             image: "wireframe-placeholder"
+    //         },
 
-            {
-                title: "Design System",
-                image: "designsystem-placeholder"
-            },
+    //         {
+    //             title: "Design System",
+    //             image: "designsystem-placeholder"
+    //         },
 
-            {
-                title: "Final Solution",
-                image: "saas-ui-placeholder"
-            },
+    //         {
+    //             title: "Final Solution",
+    //             image: "saas-ui-placeholder"
+    //         },
 
-            {
-                title: "Impact",
-                text:
-                    "The redesign improved findability, usability and confidence in a complex monitoring environment."
-            }
+    //         {
+    //             title: "Impact",
+    //             text:
+    //                 "The redesign improved findability, usability and confidence in a complex monitoring environment."
+    //         }
 
-        ]
-    }
+    //     ]
+    // }
 }
