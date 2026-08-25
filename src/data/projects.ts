@@ -16,8 +16,8 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "timecurrencyapp",
-    name: "Time & Currency App – Global Comparison Utility",
+    id: "global-context",
+    name: "Global Context – Time, Weather & Currency",
     role: "Product Designer & React Native Developer",
     description:
       "Mobile application that centralizes time zones, weather and currency conversion into a single, fast comparison experience for travelers and remote workers.",

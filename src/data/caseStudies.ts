@@ -28,14 +28,14 @@ type CaseStudy = {
 };
 
 export const caseStudies: Record<string, CaseStudy> = {
-    timecurrencyapp: {
+    "global-context": {
         hero: {
-            title: "Time & Currency App",
+            title: "Global Context",
             role: "React Native Developer • Product Designer",
             year: "2025",
             duration: "4 months",
             description:
-                "Mobile product that unifies time zones, weather and currency comparison into a single intuitive experience",
+                "Mobile utility that brings time zones, weather and currency comparison into one intuitive global context.",
             heroImage: "/images/time-currency/hero-mockup.png"
         },
 
@@ -164,6 +164,8 @@ export const caseStudies: Record<string, CaseStudy> = {
             }
         ],
         behanceUrl: "https://www.behance.net/gallery/249086161/Time-Currency-Unified-Travel-Utility-Case-Study"
+
+        // Apos Play Store publicada: “From prototype to published product”, mostrando justamente swipe-to-delete, drag To → From, currency UX refinada, date indicators, mudança de nome e o link/badge Available on Google Play. iteração real de produto -> não somente um projeto final estático.
     },
 
     wortschatz: {

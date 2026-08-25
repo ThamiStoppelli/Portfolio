@@ -8,20 +8,20 @@ export default function ProjectCaseStudy() {
 
   if (!study) {
     return (
-        <S.Page>
-            <S.PageEmpathy>
-                <S.BackLink to="/">← Back to portfolio</S.BackLink>
-                <p>I'm on it and this project's page will be available soon! ☺️</p>
-                <div>
-                    <S.FooterButton to="/" state={{ scrollTo: "contact" }} variant="primary">
-                    Let's Work Together
-                    </S.FooterButton>
-                    <S.FooterButton to="/" state={{ scrollTo: "projects" }}variant="secondary">
-                    View more projects
-                    </S.FooterButton>
-                </div>
-            </S.PageEmpathy>
-        </S.Page>
+      <S.Page>
+        <S.PageEmpathy>
+          <S.BackLink to="/">← Back to portfolio</S.BackLink>
+          <p>I'm on it and this project's page will be available soon! ☺️</p>
+          <div>
+            <S.FooterButton to="/" state={{ scrollTo: "contact" }} variant="primary">
+              Let's Work Together
+            </S.FooterButton>
+            <S.FooterButton to="/" state={{ scrollTo: "projects" }} variant="secondary">
+              View more projects
+            </S.FooterButton>
+          </div>
+        </S.PageEmpathy>
+      </S.Page>
     )
   }
 
@@ -31,21 +31,21 @@ export default function ProjectCaseStudy() {
 
       <S.Hero>
         <S.HeroContent>
-            <p>{study.hero.role}</p>
-            <h1>{study.hero.title}</h1>
-            <S.Description>
-              {study.hero.description}
-            </S.Description>
-            <span>
-              {study.hero.year} • {study.hero.duration}
-            </span>
+          <p>{study.hero.role}</p>
+          <h1>{study.hero.title}</h1>
+          <S.Description>
+            {study.hero.description}
+          </S.Description>
+          <span>
+            {study.hero.year} • {study.hero.duration}
+          </span>
         </S.HeroContent>
 
         <S.HeroVisual>
-            <img
+          <img
             src={study.hero.heroImage}
             alt={study.hero.title}
-            />
+          />
         </S.HeroVisual>
       </S.Hero>
 
@@ -66,16 +66,16 @@ export default function ProjectCaseStudy() {
         </S.SideNav>
 
         <S.Content>
-          
+
           <S.Section id="key-metrics">
 
-          <h2 id="overview">Overview</h2>
-          {study.overview.map((section) => (
-            <div key={section.title}>
-              <h3>{section.title}</h3>
-              <p>{section.text}</p>
-            </div>
-              ))}
+            <h2 id="overview">Overview</h2>
+            {study.overview.map((section) => (
+              <div key={section.title}>
+                <h3>{section.title}</h3>
+                <p>{section.text}</p>
+              </div>
+            ))}
           </S.Section>
 
           <S.Section id="key-metrics">
@@ -96,75 +96,80 @@ export default function ProjectCaseStudy() {
             return (
               <S.Section key={section.title} id={id}>
                 <h2>{section.title}</h2>
-                
+
                 {section.blocks ? (
-                    <S.Blocks>
-                        {section.blocks?.map((block, index) => (
-                            <S.Block key={index}>
+                  <S.Blocks>
+                    {section.blocks?.map((block, index) => (
+                      <S.Block key={index}>
 
-                            {block.text && <p>{block.text}</p>}
+                        {block.text && <p>{block.text}</p>}
 
-                            {block.image && (
-                                <S.Image>
-                                <img src={block.image} alt={section.title} />
-                                </S.Image>
-                            )}
-
-                            </S.Block>
-                        ))}
-                    </S.Blocks>
-                    ) : (
-                    <>
-                        {section.video && (
-                          <>
-                            <S.Video>
-                              <video
-                                src={section.video}
-                                autoPlay
-                                muted
-                                loop
-                                playsInline
-                                controls
-                              />
-                            </S.Video>
-                          </>
+                        {block.image && (
+                          <S.Image>
+                            <img src={block.image} alt={section.title} />
+                          </S.Image>
                         )}
 
-                        {section.text && <p>{section.text}</p>}
+                      </S.Block>
+                    ))}
+                  </S.Blocks>
+                ) : (
+                  <>
+                    {section.video && (
+                      <>
+                        <S.Video>
+                          <video
+                            src={section.video}
+                            autoPlay
+                            muted
+                            loop
+                            playsInline
+                            controls
+                          />
+                        </S.Video>
+                      </>
+                    )}
 
-                        {section.image && (
-                        <S.Image>
-                            <img src={section.image} alt={section.title} />
-                        </S.Image>
-                        )}
-                    </>
+                    {section.text && <p>{section.text}</p>}
+
+                    {section.image && (
+                      <S.Image>
+                        <img src={section.image} alt={section.title} />
+                      </S.Image>
+                    )}
+                  </>
                 )}
               </S.Section>
             );
           })}
 
           {study.behanceUrl ? (
-            <S.ExternalLink 
-                href={study.behanceUrl}
-                target="_blank"
+            <S.ExternalLink
+              href={study.behanceUrl}
+              target="_blank"
             >
-                View full case study on Behance →
+              View full case study on Behance →
             </S.ExternalLink>
           ) : (
             <p></p>
+          )}
+          {slug === "global-context" && (
+            <S.PrivacyLink to="/project/global-context/privacy">
+              Privacy Policy →
+            </S.PrivacyLink>
           )}
         </S.Content>
       </S.Layout>
       <S.CaseFooter>
         <h3>Let's build thoughtful products together</h3>
         <div>
-            <S.FooterButton to="/" state={{ scrollTo: "contact" }} variant="primary">
-              Let's Work Together
-            </S.FooterButton>
+          <S.FooterButton to="/" state={{ scrollTo: "contact" }} variant="primary">
+            Let's Work Together
+          </S.FooterButton>
 
-            <S.FooterButton to="/" state={{ scrollTo: "projects" }}variant="secondary">
-              View more projects
-            </S.FooterButton>
+          <S.FooterButton to="/" state={{ scrollTo: "projects" }} variant="secondary">
+            View more projects
+          </S.FooterButton>
         </div>
       </S.CaseFooter>
     </S.Page>

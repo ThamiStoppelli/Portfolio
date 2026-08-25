@@ -266,3 +266,15 @@ export const Video = styled.div`
    display: block;
   }
 `;
+
+export const PrivacyLink = styled(Link)`
+  display: inline-block;
+  margin-top: 24px;
+  color: ${({ theme }) => theme.colors.accentStrong};
+  font-size: 14px;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
