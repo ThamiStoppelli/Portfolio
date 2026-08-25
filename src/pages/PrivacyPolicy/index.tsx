@@ -4,7 +4,7 @@ export default function PrivacyPolicy() {
   return (
     <S.Page>
       <S.TopRow>
-        <S.BackLink to="/project/timecurrencyapp">
+        <S.BackLink to="/project/global-context">
           ← View Global Context case study
         </S.BackLink>
       </S.TopRow>
@@ -106,9 +106,10 @@ export default function PrivacyPolicy() {
 
       <S.Footer>
         <span>Global Context</span>
-        <S.ProjectLink to="/project/timecurrencyapp">
+        {/* por link do app após publicado */}
+        {/* <S.ProjectLink to="/project/global-context">
           Go to Global Context App →
-        </S.ProjectLink>
+        </S.ProjectLink> */}
       </S.Footer>
     </S.Page>
   );
