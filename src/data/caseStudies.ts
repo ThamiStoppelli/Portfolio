@@ -41,14 +41,14 @@ export const caseStudies: Record<string, CaseStudy> = {
 
         overview: [
             {
-            title: "Challenge",
-            text:
-                "Frequent travelers and remote workers rely on multiple fragmented tools to manage time zones, weather conditions and currency conversions, leading to constant context switching and inefficient decision-making."
+                title: "Challenge",
+                text:
+                    "Frequent travelers and remote workers rely on multiple fragmented tools to manage time zones, weather conditions and currency conversions, leading to constant context switching and inefficient decision-making."
             },
             {
-            title: "Goal",
-            text:
-                "Design and build a lightweight, mobile-first application that consolidates essential global information into a fast, intuitive and unified experience."
+                title: "Goal",
+                text:
+                    "Design and build a lightweight, mobile-first application that consolidates essential global information into a fast, intuitive and unified experience."
             },
         ],
 
@@ -175,27 +175,29 @@ export const caseStudies: Record<string, CaseStudy> = {
             year: "2026",
             duration: "Personal project",
             description:
-                "Responsive German vocabulary learning app designed and built for focused study, deck management and local-first progress.",
-            heroImage: "/images/german-flashcards/hero-mockup.png"
+                "A German vocabulary learning app designed in Figma and implemented with React/TypeScript, combining focused study, editable decks and lightweight spaced repetition.",
+            heroImage: "/images/wortschatz/hero-mockup.png"
         },
 
         overview: [
             {
-            title: "Challenge",
-            text:
-                "While learning German, vocabulary was often collected across notes, messages, spreadsheets and isolated word lists. The main difficulty was not only memorizing words, but managing what should be studied now, what had already been learned and what should be saved for later."
+                title: "Challenge",
+                text:
+                    "While learning German, vocabulary was often scattered across notes, messages, screenshots and static word lists. The challenge was not only memorizing words, but designing a system that made it clear what should be studied now, what should wait for later and what had already been learned."
             },
             {
-            title: "Goal",
-            text:
-                "Design and build a lightweight vocabulary learning product that combines focused study, clear learning stages, editable decks and local data ownership in a responsive experience."
-            },
+                title: "Goal",
+                text:
+                    "Design and implement a lightweight vocabulary learning product with clear learning states, focused study sessions, editable decks, spaced review logic and responsive behavior across desktop and mobile."
+            }
         ],
 
         metrics: [
             "600 curated vocabulary words",
             "6 CEFR levels from A1 to C2",
             "3 learning states",
+            "Lightweight spaced repetition",
+            "JSON import/export",
             "Built with Next.js + TypeScript"
         ],
 
@@ -208,66 +210,65 @@ export const caseStudies: Record<string, CaseStudy> = {
             {
                 title: "Problem",
                 text:
-                    "Vocabulary learning often becomes fragmented across notebooks, messages, screenshots and static lists. These tools make it difficult to understand which words are currently being studied, which ones are already learned and which ones should be saved for later. Existing flashcard platforms can solve parts of this problem, but often introduce more complexity than needed for a focused personal workflow."
+                    "Vocabulary learning often becomes fragmented across notebooks, screenshots, messages and static lists. These tools can store words, but they rarely support the full learning workflow: choosing what to study, reviewing actively, updating cards and separating future vocabulary from current study material. I designed Wortschatz to turn that fragmented process into a clear, focused learning system."
             },
 
             {
                 title: "Product Strategy",
-                // image: "/images/german-flashcards/learning-model.png",
+                image: "/images/wortschatz/product-strategy.png",
                 text:
-                    "Instead of treating vocabulary as a single list, Wortschatz is structured around three intentional learning states: Future Learning, Active Learning and Learned. This model separates preparation, current study and completed learning, while ensuring that words saved for later do not distort current progress. The product remains account-free and local-first to reduce setup friction and keep the experience lightweight."
+                    "I structured Wortschatz around three intentional learning states: Future Learning, Active Learning and Learned. This product model separates preparation, active review and archived vocabulary, making progress easier to understand while keeping future words from distracting the current study flow."
             },
 
             {
                 title: "Learning Experience",
-                // image: "/images/german-flashcards/learning-experience.png",
+                image: "/images/wortschatz/learning-experience.png",
                 text:
-                    "The experience combines three connected surfaces: a focused study flow, an editable deck library and a built-in core vocabulary collection. Users review one card at a time, reveal the answer when ready and decide whether to keep the word active or move it to Learned. The deck library supports editing, deletion and movement between states, while the curated vocabulary library provides 600 words across CEFR levels A1 to C2."
+                    "The study flow is built around active recall. Users see one German word at a time, reveal the answer when ready and rate their recall with Again, Hard, Good or Easy. These ratings feed a lightweight spaced-repetition system, where difficult words return sooner and easier words are spaced further apart. Manual actions like I know this and Later remain separate, giving users control over deck organization."
             },
 
             {
                 title: "Engineering & Architecture",
-                // image: "/images/german-flashcards/architecture.png",
+                image: "/images/wortschatz/architecture.png",
                 text:
-                    "Wortschatz was built with Next.js, React and TypeScript using a component-based architecture. A custom useFlashcards hook centralizes state, derived data, persistence behavior and domain actions, while utility functions handle card creation, scheduling, import, export and storage. Reusable components such as modals, cards, panels and custom selects keep interaction patterns consistent and implementation logic maintainable."
+                    "I implemented the product with Next.js, React and TypeScript using a component-based architecture. A custom useFlashcards hook centralizes state, derived data and domain actions, while utility functions handle card creation, review scheduling and persistence. This separation keeps the UI components focused and makes the learning logic easier to maintain."
             },
 
             {
                 title: "Design Decisions",
-                // image: "/images/german-flashcards/design-decisions.png",
+                image: "/images/wortschatz/design-decisions.png",
                 text:
-                    "Several product decisions were shaped directly by implementation behavior. The study queue preserves a stable order instead of reshuffling after every update, helping learners maintain context during a session. Editing is handled through one reusable modal available from both Study and Deck Library, reducing duplicated interaction and code patterns. On mobile, secondary header actions move into a compact menu so the study experience remains visually dominant."
+                    "Several decisions came from turning the app into a tool I could use during real study sessions. I kept import and export as first-class actions so users can back up or move their vocabulary without an account, added a curated CEFR vocabulary library to make starting a deck faster, and used reusable forms and modals for creating and editing cards so the experience stays consistent across the product."
             },
 
             {
                 title: "Import, Export & Data Ownership",
                 text:
-                    "The application stores progress locally and does not require an account or database. Users can export their complete deck as JSON and later import it by merging with or replacing existing data. Card status is preserved during export and import, allowing Active, Learned and Future Learning cards to return to the correct sections while duplicate handling protects the current deck."
+                    "Wortschatz stores progress locally and does not require an account or backend. Users can export their complete deck as JSON and import it later by merging with or replacing existing data. Card status and review metadata are preserved, so vocabulary returns to the correct learning state after import."
             },
 
             {
                 title: "Responsive Product Design",
-                // image: "/images/german-flashcards/responsive-design.png",
                 text:
-                    "The desktop interface uses a panel-based layout that keeps Study, Deck Library and supporting vocabulary tools visible within one workspace. On smaller screens, Study receives priority, secondary sections become more compact and header actions move into a three-dot menu. These adaptations preserve the same product model without simply compressing the desktop layout."
+                    "The desktop interface uses a panel-based workspace that keeps Study and Deck Library visible together. On mobile, the layout prioritizes the study flow, makes deck tabs horizontally scrollable and moves secondary application actions into a compact three-dot menu. The goal was not to compress the desktop UI, but to adapt the experience around mobile usage."
             },
 
             {
                 title: "Challenges & Tradeoffs",
                 text:
-                    "The project intentionally favors localStorage over a backend, reducing complexity and removing account friction at the cost of automatic cloud synchronization. The current review model remains lightweight instead of implementing a full spaced-repetition algorithm, prioritizing transparency and control over advanced scheduling. The main challenge was balancing feature growth with the original goal of keeping vocabulary management simple."
+                    "The project intentionally uses localStorage instead of a backend, reducing setup friction at the cost of automatic cloud synchronization. The spaced-repetition logic is lightweight rather than a full Anki-style system, making the behavior easier to understand and maintain. The main challenge was balancing feature growth with the original goal of keeping vocabulary practice simple."
             },
 
             {
                 title: "Next Improvements",
                 text:
-                    "Future iterations could introduce a more advanced spaced-repetition model, search and filtering, additional bulk actions, optional cloud synchronization and broader import formats. These improvements would only be added if they preserve the focused workflow rather than turning the product into a feature-heavy learning platform."
+                    "Future iterations could add optional grammar metadata, search and filtering, richer review statistics, broader import formats and optional cloud synchronization. These additions would only make sense if they preserve the focused learning workflow instead of turning the product into a feature-heavy study platform."
             },
 
             {
                 title: "Impact & Learnings",
                 text:
-                    "Wortschatz strengthened my ability to move from a personal problem to a complete shipped product while owning both interface design and implementation. The project reinforced how state architecture, responsive behavior and interaction design are closely connected, and how deliberate simplification can create a stronger product than continuously adding features."
+                    "Wortschatz strengthened my ability to move from a personal learning problem to a shipped product while owning both design and implementation. The project reinforced how product decisions, state architecture, reusable components, persistence and responsive interaction design directly shape the quality of a learning experience."
             }
         ]
     },
@@ -284,19 +285,19 @@ export const caseStudies: Record<string, CaseStudy> = {
 
         overview: [
             {
-            title: "Scope & Ownership",
-            text:
-                "End-to-end ownership across product research, UX/UI design and implementation. Two separate frontends were built: React for web and React Native with Expo for mobile, both connected to a shared Node.js and MongoDB backend."
+                title: "Scope & Ownership",
+                text:
+                    "End-to-end ownership across product research, UX/UI design and implementation. Two separate frontends were built: React for web and React Native with Expo for mobile, both connected to a shared Node.js and MongoDB backend."
             },
             {
-            title: "Challenge",
-            text:
-                "People with food allergies and dietary restrictions struggle to quickly identify safe products and access trustworthy nutritional information."
+                title: "Challenge",
+                text:
+                    "People with food allergies and dietary restrictions struggle to quickly identify safe products and access trustworthy nutritional information."
             },
             {
-            title: "Goal",
-            text:
-                "Design a searchable and personalized platform that simplifies safe food discovery through filters, nutrition insights and educational content."
+                title: "Goal",
+                text:
+                    "Design a searchable and personalized platform that simplifies safe food discovery through filters, nutrition insights and educational content."
             },
         ],
 
@@ -411,14 +412,14 @@ export const caseStudies: Record<string, CaseStudy> = {
 
         overview: [
             {
-            title: "Challenge",
-            text:
-                "UNIFOR’s maintenance division had no centralized way to monitor distributed electrical devices, identify abnormal consumption, control equipment remotely or automate daily energy routines across campus infrastructure."
+                title: "Challenge",
+                text:
+                    "UNIFOR’s maintenance division had no centralized way to monitor distributed electrical devices, identify abnormal consumption, control equipment remotely or automate daily energy routines across campus infrastructure."
             },
             {
-            title: "Goal",
-            text:
-                "Build a web platform that transformed distributed IoT dev ices into a centralized, observable and controllable operational system for energy monitoring and infrastructure management."
+                title: "Goal",
+                text:
+                    "Build a web platform that transformed distributed IoT dev ices into a centralized, observable and controllable operational system for energy monitoring and infrastructure management."
             },
         ],
 
@@ -537,14 +538,14 @@ export const caseStudies: Record<string, CaseStudy> = {
 
         overview: [
             {
-            title: "Challenge",
-            text:
-                "Psychologists and interns lacked a centralized system to manage clinical sessions, supervision workflows and sensitive patient data."
+                title: "Challenge",
+                text:
+                    "Psychologists and interns lacked a centralized system to manage clinical sessions, supervision workflows and sensitive patient data."
             },
             {
-            title: "Goal",
-            text:
-                "Design a secure and intuitive healthcare platform that improves clinical workflows, supervision and access to information."
+                title: "Goal",
+                text:
+                    "Design a secure and intuitive healthcare platform that improves clinical workflows, supervision and access to information."
             },
         ],
 
