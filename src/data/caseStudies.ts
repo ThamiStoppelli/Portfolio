@@ -204,7 +204,8 @@ export const caseStudies: Record<string, CaseStudy> = {
         sections: [
             {
                 title: "See it in action",
-                // video: "/videos/wortschatz-demo.mp4"
+                text:
+                    "The project is live and can be explored directly in the browser: https://german-flashcards-ts.vercel.app/"
             },
 
             {
