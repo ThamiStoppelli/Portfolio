@@ -132,6 +132,22 @@ export default function ProjectCaseStudy() {
 
                     {section.text && <p>{section.text}</p>}
 
+                    {section.links && section.links.length > 0 && (
+                      <S.SectionLinks>
+                        {section.links.map((link) => (
+                          <S.SectionLink
+                            key={link.href}
+                            href={link.href}
+                            target="_blank"
+                            rel="noreferrer"
+                            variant={link.variant}
+                          >
+                            {link.label}
+                          </S.SectionLink>
+                        ))}
+                      </S.SectionLinks>
+                    )}
+
                     {section.image && (
                       <S.Image>
                         <img src={section.image} alt={section.title} />

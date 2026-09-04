@@ -4,11 +4,18 @@ type Block = {
     caption?: string;
 };
 
+type CaseStudyLink = {
+    label: string;
+    href: string;
+    variant?: "primary" | "secondary";
+};
+
 type Section = {
     title: string;
     text?: string;
     image?: string;
     video?: string;
+    links?: CaseStudyLink[];
     blocks?: Block[];
 };
 
@@ -205,7 +212,19 @@ export const caseStudies: Record<string, CaseStudy> = {
             {
                 title: "See it in action",
                 text:
-                    "The project is live and can be explored directly in the browser: https://german-flashcards-ts.vercel.app/"
+                    "Wortschatz is live as a working responsive web app. You can try the study flow, manage vocabulary, explore the core vocabulary library and inspect the implementation on GitHub.",
+                links: [
+                    {
+                        label: "Open live project",
+                        href: "https://german-flashcards-ts.vercel.app/",
+                        variant: "primary"
+                    },
+                    {
+                        label: "View GitHub",
+                        href: "https://github.com/ThamiStoppelli/german-flashcards",
+                        variant: "secondary"
+                    }
+                ]
             },
 
             {

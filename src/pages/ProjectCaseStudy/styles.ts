@@ -116,7 +116,7 @@ export const Content = styled.div`
 `;
 
 export const Section = styled.section`
-  scroll-margin-top: 110x;
+  scroll-margin-top: 110px;
 
   h2 {
     font-size: 32px;
@@ -253,6 +253,41 @@ export const ExternalLink = styled.a`
   
   &:hover{
    text-decoration: underline;
+  }
+`;
+
+export const SectionLinks = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+`;
+
+export const SectionLink = styled.a<{ variant?: "primary" | "secondary" }>`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 42px;
+  padding: 10px 18px;
+  border-radius: 999px;
+
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: 0.25s ease;
+
+  background: ${({ variant, theme }) =>
+    variant === "primary" ? theme.colors.accentStrong : "transparent"};
+
+  color: ${({ variant, theme }) =>
+    variant === "primary" ? "#fff" : theme.colors.accentStrong};
+
+  border: 1px solid ${({ theme }) => theme.colors.accentStrong};
+
+  &:hover {
+    transform: translateY(-2px);
   }
 `;
 
