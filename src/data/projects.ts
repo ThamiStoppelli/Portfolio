@@ -59,7 +59,8 @@ export const projects: Project[] = [
       "Implemented a modular architecture using React, TypeScript and custom hooks for state management and persistence."
     ],
     liveUrl: "https://german-flashcards-ts.vercel.app/",
-    githubUrl: "https://github.com/ThamiStoppelli/german-flashcards"
+    githubUrl: "https://github.com/ThamiStoppelli/german-flashcards",
+    behanceUrl: "https://www.behance.net/gallery/255477503/Wortschatz-Vocabulary-Learning-Tool"
   },
   {
     id: "buscasaudavel",

@@ -91,7 +91,7 @@ export const caseStudies: Record<string, CaseStudy> = {
             {
                 title: "Product Strategy",
                 text:
-                    "Instead of merging all functionalities into a single overloaded interface, the product was divided into three focused modules: Time, Weather and Currency. Time and Weather share a location-based mental model and can be synchronized, while Currency remains independent due to its different interaction logic. This approach reduces complexity and preserves predictability."
+                    "Instead of merging all functionalities into a single overloaded interface, the product was divided into three focused modules: Time, Weather and Currency. Time and Weather share a location based mental model and can be synchronized, while Currency remains independent because its interaction model is fundamentally different. Rather than synchronizing all three modules for consistency's sake, I kept Currency separate to preserve predictable behavior for users and create a deliberate boundary in the state architecture."
             },
             {
                 title: "Product Evolution",
@@ -128,7 +128,7 @@ export const caseStudies: Record<string, CaseStudy> = {
                 title: "From Concept to Implementation",
                 image: "/images/time-currency/concept-to-app.png",
                 text:
-                    "The product evolved from low-fidelity wireframes into a fully functional mobile application. Design decisions were translated into real features through API integration, state management and interaction logic, bridging the gap between concept and execution."
+                    "I owned the product from interface design through implementation, translating the same interaction decisions into React Native components, state logic and API integrations. This end to end ownership allowed design decisions to be refined during implementation rather than lost in handoff."
             },
             {
                 title: "Engineering & Architecture",
@@ -289,8 +289,9 @@ export const caseStudies: Record<string, CaseStudy> = {
                 title: "Impact & Learnings",
                 text:
                     "Wortschatz strengthened my ability to move from a personal learning problem to a shipped product while owning both design and implementation. The project reinforced how product decisions, state architecture, reusable components, persistence and responsive interaction design directly shape the quality of a learning experience."
-            }
-        ]
+            },
+        ],
+        behanceUrl: "https://www.behance.net/gallery/255477503/Wortschatz-Vocabulary-Learning-Tool"
     },
 
     buscasaudavel: {
