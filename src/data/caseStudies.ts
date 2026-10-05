@@ -42,7 +42,7 @@ export const caseStudies: Record<string, CaseStudy> = {
             year: "2025",
             duration: "3 months",
             description:
-                "End-to-end product design across a public social support application and GOL’s internal operations platform, followed by frontend implementation of the production-facing experience.",
+                "End-to-end product design and frontend delivery for Instituto GOL, delivered through Spread Tecnologia across a public social support application and GOL’s internal operations platform.",
             heroImage: "/images/gol/hero-mockup.png"
         },
 
@@ -50,7 +50,7 @@ export const caseStudies: Record<string, CaseStudy> = {
             {
                 title: "Scope & Ownership",
                 text:
-                    "I was the sole UI/UX Designer on the project, responsible for the complete experience across both the public application platform and GOL’s internal request management system. I gathered requirements, designed every screen and flow, presented solutions to stakeholders, iterated based on feedback and validated the final experience. After the design phase, I also implemented most of the public-facing frontend."
+                    "Through Spread Tecnologia, I worked on the Instituto GOL project as the sole UI/UX Designer, responsible for the complete experience across both the public application platform and GOL’s internal request management system. I gathered requirements, designed every screen and flow, presented solutions to stakeholders, iterated based on feedback and validated the final experience. After the design phase, I also implemented most of the public-facing frontend."
             },
             {
                 title: "Challenge",
@@ -88,7 +88,7 @@ export const caseStudies: Record<string, CaseStudy> = {
             {
                 title: "My Role",
                 text:
-                    "I worked as the sole UI/UX Designer and a Frontend Developer within a four-person core team alongside a Backend Engineer, Systems Architect and Project Manager. I owned the complete design process across the public and internal experiences, from requirements gathering and workflow definition to stakeholder presentations, iteration and final validation. After the design phase, I implemented most of the public-facing frontend, while collaborating closely with the backend engineer on integrations and technical constraints."
+                    "I worked on the Instituto GOL project through Spread Tecnologia, where I was the sole UI/UX Designer and a Frontend Developer within a four-person core team alongside a Backend Engineer, Systems Architect and Project Manager. I owned the complete design process across the public and internal experiences, from requirements gathering and workflow definition to stakeholder presentations, iteration and final validation. After the design phase, I implemented most of the public-facing frontend, while collaborating closely with the backend engineer on integrations and technical constraints."
             },
 
             {
@@ -155,7 +155,7 @@ export const caseStudies: Record<string, CaseStudy> = {
             {
                 title: "Collaboration & Delivery",
                 text:
-                    "The product was delivered by a compact four-person core team over approximately three months. I worked closely with the Backend Engineer, Systems Architect and Project Manager to translate business requirements into product flows, present and validate solutions with stakeholders and coordinate interface decisions with technical constraints and integrations."
+                    "The project was delivered through Spread Tecnologia for Instituto GOL by a compact four-person core team over approximately three months. I worked closely with the Backend Engineer, Systems Architect and Project Manager to translate business requirements into product flows, present and validate solutions with stakeholders and coordinate interface decisions with technical constraints and integrations."
             },
 
             {

@@ -20,7 +20,7 @@ export const projects: Project[] = [
     name: "Instituto GOL – Social Support Platform",
     role: "Sole UI/UX Designer & Frontend Developer",
     description:
-      "End-to-end design and frontend delivery for GOL’s social support platform, connecting a public application experience with the internal workflows used to process requests.",
+      "Client project delivered through Spread Tecnologia for Instituto GOL, combining end-to-end product design with frontend implementation across public and internal workflows.",
     techStack: [
       "Angular",
       "TypeScript",
@@ -37,6 +37,7 @@ export const projects: Project[] = [
     ],
     liveUrl: "https://institutogol.voegol.com.br/home"
   },
+  // global context
   {
     id: "global-context",
     name: "Global Context – Time, Weather & Currency",
@@ -62,6 +63,7 @@ export const projects: Project[] = [
     behanceUrl: "https://www.behance.net/gallery/249086161/Time-Currency-Unified-Travel-Utility-Case-Study"
     // demoVideo: "/videos/time-currency-app.mp4"
   },
+  // wortschatz
   {
     id: "wortschatz",
     name: "Wortschatz – Vocabulary Learning Platform",
@@ -84,6 +86,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/ThamiStoppelli/german-flashcards",
     behanceUrl: "https://www.behance.net/gallery/255477503/Wortschatz-Vocabulary-Learning-Tool"
   },
+  // busca saudavel
   {
     id: "buscasaudavel",
     name: "Busca Saudável (Healthy Search) – Food Search & Nutrition Platform",
@@ -109,6 +112,7 @@ export const projects: Project[] = [
     figmaUrl: "https://www.figma.com/proto/oXi5IgGHMEtEAn9KBCSrFT/Projeto-Aplicado---Busca-Saudavel?page-id=1%3A2&node-id=460-2523&p=f&viewport=-676%2C-381%2C0.02&t=0WIUdkKSUTju6bP0-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=460%3A2523&show-proto-sidebar=1",
     behanceUrl: "https://www.behance.net/gallery/248123099/Busca-Saudavel-The-Nutrition-Label-UIUX-Case-Study"
   },
+  // blizzard
   {
     id: "blizzard",
     name: "Blizzard – Energy Monitoring & Control System",
@@ -134,6 +138,7 @@ export const projects: Project[] = [
     figmaUrl: "https://www.figma.com/proto/NB1BU9XnDSsBuZ4aR1SvAt/Blizzard--Copy---Copy-?page-id=47%3A3&node-id=67-12&p=f&viewport=71%2C126%2C0.02&t=DfPJfOTiqIF9q70m-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=67%3A12",
     article: "https://uol.unifor.br/oul/conteudosite/F45579120220826192048457535/Artigo%20Blizzard%20software.pdf"
   },
+  // cuidar psi
   {
     id: "cuidarpsi",
     name: "Anni – Psychology Management System",
