@@ -16,11 +16,33 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "gol",
+    name: "Instituto GOL – Social Support Platform",
+    role: "Sole UI/UX Designer & Frontend Developer",
+    description:
+      "End-to-end design and frontend delivery for GOL’s social support platform, connecting a public application experience with the internal workflows used to process requests.",
+    techStack: [
+      "Angular",
+      "TypeScript",
+      "Figma",
+      "Tailwind CSS",
+      "Reactive Forms",
+      "REST APIs"
+    ],
+    details: [
+      "Owned 100% of the UI/UX across the public application experience and GOL’s internal operations platform.",
+      "Gathered requirements, designed complete workflows and presented, iterated and validated solutions with stakeholders.",
+      "Designed a six-step application process, request tracking, transactional communication and complex internal review workflows.",
+      "Implemented most of the public-facing frontend in Angular and TypeScript within a four-person product team."
+    ],
+    liveUrl: "https://institutogol.voegol.com.br/home"
+  },
+  {
     id: "global-context",
     name: "Global Context – Time, Weather & Currency",
     role: "Product Designer & React Native Developer",
     description:
-      "Mobile application that centralizes time zones, weather and currency conversion into a single, fast comparison experience for travelers and remote workers.",
+      "Published mobile application that centralizes time zones, weather and currency conversion into a single, fast comparison experience for travelers and remote workers.",
     techStack: [
       "React Native",
       "TypeScript",
@@ -30,12 +52,12 @@ export const projects: Project[] = [
       "Context API"
     ],
     details: [
+      "Designed and shipped the product end to end, from interface design through React Native implementation and Google Play release.",
       "Built a multi-utility comparison system for time zones, weather conditions and currency rates.",
-      "Designed modular architecture with reusable components, services and global state management.",
       "Implemented API integrations for geocoding, weather, timezone and currency data.",
-      "Focused on UX simplification by separating mental models and reducing cognitive load."
+      "Designed cross-screen synchronization while keeping Currency independent based on its different interaction model."
     ],
-    liveUrl: "https://time-currency-ts.vercel.app/",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.globalcontext.app",
     githubUrl: "https://github.com/ThamiStoppelli/Time-Currency-App",
     behanceUrl: "https://www.behance.net/gallery/249086161/Time-Currency-Unified-Travel-Utility-Case-Study"
     // demoVideo: "/videos/time-currency-app.mp4"

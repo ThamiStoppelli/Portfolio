@@ -35,6 +35,144 @@ type CaseStudy = {
 };
 
 export const caseStudies: Record<string, CaseStudy> = {
+    gol: {
+        hero: {
+            title: "Instituto GOL – Social Support Platform",
+            role: "Sole UI/UX Designer • Frontend Developer",
+            year: "2025",
+            duration: "3 months",
+            description:
+                "End-to-end product design across a public social support application and GOL’s internal operations platform, followed by frontend implementation of the production-facing experience.",
+            heroImage: "/images/gol/hero-mockup.png"
+        },
+
+        overview: [
+            {
+                title: "Scope & Ownership",
+                text:
+                    "I was the sole UI/UX Designer on the project, responsible for the complete experience across both the public application platform and GOL’s internal request management system. I gathered requirements, designed every screen and flow, presented solutions to stakeholders, iterated based on feedback and validated the final experience. After the design phase, I also implemented most of the public-facing frontend."
+            },
+            {
+                title: "Challenge",
+                text:
+                    "Instituto GOL needed a digital service that could guide organizations through a structured social support application process while giving the internal team the tools required to review, manage and process each request."
+            },
+            {
+                title: "Goal",
+                text:
+                    "Design and deliver a connected end-to-end experience that translated complex eligibility rules, documentation requirements, application stages and internal operational workflows into a clear and manageable digital product."
+            }
+        ],
+
+        metrics: [
+            "Sole UI/UX Designer",
+            "2 connected product surfaces",
+            "6-step application workflow",
+            "Designed and shipped in 3 months"
+        ],
+
+        sections: [
+            {
+                title: "See it in production",
+                text:
+                    "The public platform was launched to production and remains live today as Instituto GOL’s digital experience for its Social Support Program. Application forms are available during active public calls, while program information and request tracking remain accessible throughout the year.",
+                links: [
+                    {
+                        label: "Open live product",
+                        href: "https://institutogol.voegol.com.br/home",
+                        variant: "primary"
+                    }
+                ]
+            },
+
+            {
+                title: "My Role",
+                text:
+                    "I worked as the sole UI/UX Designer and a Frontend Developer within a four-person core team alongside a Backend Engineer, Systems Architect and Project Manager. I owned the complete design process across the public and internal experiences, from requirements gathering and workflow definition to stakeholder presentations, iteration and final validation. After the design phase, I implemented most of the public-facing frontend, while collaborating closely with the backend engineer on integrations and technical constraints."
+            },
+
+            {
+                title: "Problem Context",
+                text:
+                    "Instituto GOL’s Social Support Program enables organizations to request support for initiatives across areas such as sports, education, volunteering and social impact. The challenge went beyond collecting applications: organizations needed guidance through a structured submission process, while GOL’s internal team needed a reliable way to evaluate, manage and progress each request through multiple operational stages."
+            },
+
+            {
+                title: "One Process, Two Product Experiences",
+                image: "/images/gol/end-to-end-service.png",
+                text:
+                    "I treated the public and internal products as two sides of the same service. External organizations needed clarity around eligibility, documentation, submission and status tracking, while GOL’s team needed structured workflows for analysis, compliance, approvals and request management. Designing both experiences allowed decisions on one side of the process to account for their operational consequences on the other."
+            },
+
+            {
+                title: "Public Application Experience",
+                image: "/images/gol/public-experience.png",
+                text:
+                    "The public experience was structured around three primary needs: understanding the Social Support Program, submitting an application during an active call and tracking an existing request. Clear requirements, documentation guidance, consent states and explicit system feedback were used to reduce uncertainty across a process that organizations may only complete once."
+            },
+
+            {
+                title: "Six-Step Application Flow",
+                image: "/images/gol/application-flow.png",
+                text:
+                    "The application journey was structured as a six-step guided flow that progressively organized institutional, project and supporting information. Instead of presenting applicants with one dense form, the experience divided requirements into clear stages with validation and contextual guidance, making a complex institutional process easier to understand and complete."
+            },
+
+            {
+                title: "Designing for a Seasonal Service",
+                image: "/images/gol/seasonal-service.png",
+                text:
+                    "Applications are only available during active public calls, so the experience needed to work beyond the submission window itself. I designed explicit open and closed states, eligibility guidance and contextual messaging so the platform remained understandable throughout the year rather than appearing unavailable or broken when applications were closed."
+            },
+
+            {
+                title: "Request Tracking & Communication",
+                image: "/images/gol/request-tracking.png",
+                text:
+                    "Submission did not end the user journey. Organizations needed a way to return to the platform, recover access and follow the progress of their request without relying on a traditional account-based experience. The product combined request identification, access validation, status tracking and transactional email communication to keep applicants connected to the process after submission."
+            },
+
+            {
+                title: "Internal Operations",
+                image: "/images/gol/internal-flow.png",
+                text:
+                    "Behind the public experience, I designed the complete UX/UI for GOL’s private operational platform. The system supported institutional management, initial analysis, compliance review, CAPS evaluation, final analysis, comments, documents, permissions and status transitions. Because this environment contains internal workflows, its interfaces are intentionally not reproduced publicly in this case study."
+            },
+
+            {
+                title: "From Figma to Production",
+                image: "/images/gol/design-to-production.png",
+                text:
+                    "After designing and validating the experience in Figma, I moved directly into frontend development and implemented most of the public-facing product using Angular and TypeScript. Owning both sides of the process reduced handoff loss and allowed responsive behavior, form validation, interaction states and implementation constraints to be refined directly during development."
+            },
+
+            {
+                title: "Frontend Implementation",
+                text:
+                    "The public frontend was built with Angular and TypeScript using reusable components, Angular routing, reactive form patterns and REST API integration. The application had to support multi-step forms, validation states, asynchronous data exchange and different application states while keeping the experience predictable for users."
+            },
+
+            {
+                title: "Collaboration & Delivery",
+                text:
+                    "The product was delivered by a compact four-person core team over approximately three months. I worked closely with the Backend Engineer, Systems Architect and Project Manager to translate business requirements into product flows, present and validate solutions with stakeholders and coordinate interface decisions with technical constraints and integrations."
+            },
+
+            {
+                title: "Production Outcome",
+                image: "/images/gol/production-outcome.png",
+                text:
+                    "The public platform was launched to production and remains live as Instituto GOL’s digital entry point for the Social Support Program. The delivered ecosystem connects program information, seasonal applications, transactional communication and request tracking with the internal workflows used by GOL’s team to process submitted requests."
+            },
+
+            {
+                title: "Key Learnings",
+                text:
+                    "This project reinforced the value of designing complete services rather than isolated screens. Owning both the applicant journey and the internal operational experience made it possible to reason about the full lifecycle of each request, while moving from Figma into frontend implementation helped preserve product intent through production and exposed technical constraints early enough to improve the final experience."
+            }
+        ]
+    },
+
     "global-context": {
         hero: {
             title: "Global Context",
@@ -60,13 +198,25 @@ export const caseStudies: Record<string, CaseStudy> = {
         ],
 
         metrics: [
+            "Published on Google Play",
             "3 integrated utilities",
             "Real-time data APIs",
-            "Cross-screen synchronization",
-            "Built with React Native + TypeScript"
+            "Cross-screen synchronization"
         ],
 
         sections: [
+            {
+                title: "Available on Google Play",
+                text:
+                    "Global Context is now publicly available on Google Play. I took the product from initial concept and interface design through React Native implementation, closed testing and public release.",
+                links: [
+                    {
+                        label: "View on Google Play",
+                        href: "https://play.google.com/store/apps/details?id=com.globalcontext.app",
+                        variant: "primary"
+                    }
+                ]
+            },
             {
                 title: "See it in action",
                 video: "/videos/time-currency-app.mp4"
