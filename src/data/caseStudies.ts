@@ -99,14 +99,14 @@ export const caseStudies: Record<string, CaseStudy> = {
 
             {
                 title: "One Process, Two Product Experiences",
-                image: "/images/gol/end-to-end-service.png",
+                // image: "/images/gol/end-to-end-service.png",
                 text:
                     "I treated the public and internal products as two sides of the same service. External organizations needed clarity around eligibility, documentation, submission and status tracking, while GOL’s team needed structured workflows for analysis, compliance, approvals and request management. Designing both experiences allowed decisions on one side of the process to account for their operational consequences on the other."
             },
 
             {
                 title: "Public Application Experience",
-                image: "/images/gol/public-experience.png",
+                // image: "/images/gol/public-experience.png",
                 text:
                     "The public experience was structured around three primary needs: understanding the Social Support Program, submitting an application during an active call and tracking an existing request. Clear requirements, documentation guidance, consent states and explicit system feedback were used to reduce uncertainty across a process that organizations may only complete once."
             },
@@ -120,21 +120,21 @@ export const caseStudies: Record<string, CaseStudy> = {
 
             {
                 title: "Designing for a Seasonal Service",
-                image: "/images/gol/seasonal-service.png",
+                // image: "/images/gol/seasonal-service.png",
                 text:
                     "Applications are only available during active public calls, so the experience needed to work beyond the submission window itself. I designed explicit open and closed states, eligibility guidance and contextual messaging so the platform remained understandable throughout the year rather than appearing unavailable or broken when applications were closed."
             },
 
             {
                 title: "Request Tracking & Communication",
-                image: "/images/gol/request-tracking.png",
+                // image: "/images/gol/request-tracking.png",
                 text:
                     "Submission did not end the user journey. Organizations needed a way to return to the platform, recover access and follow the progress of their request without relying on a traditional account-based experience. The product combined request identification, access validation, status tracking and transactional email communication to keep applicants connected to the process after submission."
             },
 
             {
                 title: "Internal Operations",
-                image: "/images/gol/internal-flow.png",
+                // image: "/images/gol/internal-flow.png",
                 text:
                     "Behind the public experience, I designed the complete UX/UI for GOL’s private operational platform. The system supported institutional management, initial analysis, compliance review, CAPS evaluation, final analysis, comments, documents, permissions and status transitions. Because this environment contains internal workflows, its interfaces are intentionally not reproduced publicly in this case study."
             },
@@ -160,7 +160,7 @@ export const caseStudies: Record<string, CaseStudy> = {
 
             {
                 title: "Production Outcome",
-                image: "/images/gol/production-outcome.png",
+                // image: "/images/gol/production-outcome.png",
                 text:
                     "The public platform was launched to production and remains live as Instituto GOL’s digital entry point for the Social Support Program. The delivered ecosystem connects program information, seasonal applications, transactional communication and request tracking with the internal workflows used by GOL’s team to process submitted requests."
             },
