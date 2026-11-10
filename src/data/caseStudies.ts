@@ -99,14 +99,14 @@ export const caseStudies: Record<string, CaseStudy> = {
 
             {
                 title: "One Process, Two Product Experiences",
-                // image: "/images/gol/end-to-end-service.png",
+                image: "/images/gol/end-to-end-service.png",
                 text:
                     "I treated the public and internal products as two sides of the same service. External organizations needed clarity around eligibility, documentation, submission and status tracking, while GOL’s team needed structured workflows for analysis, compliance, approvals and request management. Designing both experiences allowed decisions on one side of the process to account for their operational consequences on the other."
             },
 
             {
                 title: "Public Application Experience",
-                // image: "/images/gol/public-experience.png",
+                image: "/images/gol/public-experience.png",
                 text:
                     "The public experience was structured around three primary needs: understanding the Social Support Program, submitting an application during an active call and tracking an existing request. Clear requirements, documentation guidance, consent states and explicit system feedback were used to reduce uncertainty across a process that organizations may only complete once."
             },
@@ -127,7 +127,7 @@ export const caseStudies: Record<string, CaseStudy> = {
 
             {
                 title: "Request Tracking & Communication",
-                // image: "/images/gol/request-tracking.png",
+                image: "/images/gol/request-tracking.png",
                 text:
                     "Submission did not end the user journey. Organizations needed a way to return to the platform, recover access and follow the progress of their request without relying on a traditional account-based experience. The product combined request identification, access validation, status tracking and transactional email communication to keep applicants connected to the process after submission."
             },
@@ -170,7 +170,8 @@ export const caseStudies: Record<string, CaseStudy> = {
                 text:
                     "This project reinforced the value of designing complete services rather than isolated screens. Owning both the applicant journey and the internal operational experience made it possible to reason about the full lifecycle of each request, while moving from Figma into frontend implementation helped preserve product intent through production and exposed technical constraints early enough to improve the final experience."
             }
-        ]
+        ],
+        behanceUrl: "https://www.behance.net/gallery/258261751/Instituto-GOL-Social-Support-Platform"
     },
 
     "global-context": {

@@ -35,7 +35,8 @@ export const projects: Project[] = [
       "Designed a six-step application process, request tracking, transactional communication and complex internal review workflows.",
       "Implemented most of the public-facing frontend in Angular and TypeScript within a four-person product team."
     ],
-    liveUrl: "https://institutogol.voegol.com.br/home"
+    liveUrl: "https://institutogol.voegol.com.br/home",
+    behanceUrl: "https://www.behance.net/gallery/258261751/Instituto-GOL-Social-Support-Platform"
   },
   // global context
   {
